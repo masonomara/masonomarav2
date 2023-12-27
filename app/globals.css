@@ -109,7 +109,7 @@ a {
   pointer-events: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -118,7 +118,7 @@ h6 {
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
-}
+} */
 
 option:disabled {
   opacity: 0.4;

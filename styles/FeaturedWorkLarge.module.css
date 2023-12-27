@@ -23,6 +23,9 @@
   transition: 200ms ease-out all;
 }
 .title {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
   text-align: left;
   width: 75%;
   line-height: 97%;
