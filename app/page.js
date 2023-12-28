@@ -1,15 +1,22 @@
-"use client";
-
-import Image from "next/image";
-import styles from "./page.module.css";
+import AboutMason from "@/components/AboutMason";
 import Hero from "@/components/Hero";
 import SelectedWorks from "@/components/SelectedWorks";
+import { createClient } from "contentful";
 
-export default function Home() {
+async function Home() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const res = await client.getEntries({ content_type: "clientList" });
+
   return (
     <main>
       <Hero />
-      <SelectedWorks />
+      <SelectedWorks selectedWorks={res.items} />
+      <AboutMason />
     </main>
   );
 }
+
+export default Home;

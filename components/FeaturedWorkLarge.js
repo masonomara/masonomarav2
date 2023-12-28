@@ -2,17 +2,22 @@ import React from "react";
 import styles from "../styles/FeaturedWorkLarge.module.css";
 import Image from "next/image";
 
-export default function FeaturedWorkLarge() {
+export default function FeaturedWorkLarge({ project }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <h2 className={styles.title}>Cureader</h2>
+        <h2 className={styles.title}>
+          {project?.fields.title || "Project Title"}
+        </h2>
         <p className={styles.subtitle}>
-          A conscious RSS Reader available on the App Store.
+          {project?.fields.subtitle || "Project Subtitle"}
         </p>
       </div>
       <div className={styles.imageWrapper}>
-        <Image src={"/work/cureader.png"} fill />
+        <Image
+          src={"https:" + project?.fields.coverImage.fields.file.url}
+          fill
+        />
       </div>
     </div>
   );

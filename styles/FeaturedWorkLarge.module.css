@@ -6,16 +6,22 @@
   width: 100%;
   position: relative;
   justify-content: space-between;
-  padding-top: 32px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .imageWrapper {
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/5;
   width: 60%;
+  width: auto;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  z-index: 1;
+  /* z-index: 1; */
   transition: 200ms ease-in all;
+  min-height: 227px;
+  height: 75%;
+  max-height: 272px;
 }
 
 .wrapper:hover .imageWrapper {
@@ -27,9 +33,9 @@
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
   text-align: left;
-  width: 75%;
+  width: 100%;
   line-height: 97%;
-  font-size: calc(0.19 * (100vw - 40px));
+  font-size: calc(0.171 * (100vw - 40px));
 }
 .subtitle {
   text-align: left;
@@ -43,18 +49,31 @@
 }
 .content {
   width: 100%;
-  margin-bottom: 112px;
+  margin-bottom: 80px;
+  z-index: 1;
 }
 @media screen and (min-width: 550px) {
   .title {
-    font-size: 97px;
+    font-size: 87px;
     text-align: left;
   }
 }
 
 @media screen and (min-width: 900px) {
   .title {
-    font-size: 97px;
+    font-size: calc(0.144 * (50vw - 130px));
     text-align: left;
+  }
+  .wrapper {
+    color: var(--background);
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: -8px;
   }
 }

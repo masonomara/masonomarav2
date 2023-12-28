@@ -2,7 +2,11 @@ import React from "react";
 import styles from "../styles/SelectedWorks.module.css";
 import FeaturedWorkLarge from "./FeaturedWorkLarge";
 
-export default function SelectedWorks() {
+export default function SelectedWorks({ selectedWorks }) {
+  const featuredWork = selectedWorks.filter(
+    (selectedWork) => selectedWork.fields.topFeatured === true
+  );
+
   return (
     <div className={styles.container}>
       <div className={styles.titleWrapper}>
@@ -10,8 +14,9 @@ export default function SelectedWorks() {
       </div>
       <div className={styles.divider}>{""}</div>
       <div className={styles.featuredWorksWrapper}>
-        <FeaturedWorkLarge />
-        <FeaturedWorkLarge />
+        <FeaturedWorkLarge project={featuredWork[0]} />
+        <div className={styles.fancyDivider}>{""}</div>
+        <FeaturedWorkLarge project={featuredWork[1]} />
       </div>
     </div>
   );

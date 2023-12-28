@@ -2,7 +2,7 @@
   width: 100%;
   height: fit-content;
   padding: 16px 20px 32px 20px;
-  background-color: var(--primary);
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -12,11 +12,6 @@
   margin-top: -16px;
   z-index: 1;
   position: relative;
-}
-.featuredWorksWrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 .titleWrapper {
   width: 100%;
@@ -29,27 +24,57 @@
   font-size: 18px;
   letter-spacing: -0.01em;
   font-weight: 600;
-  color: var(--background);
+  color: var(--primary);
   text-transform: uppercase;
 }
 .divider {
   height: 2px;
-  background: var(--background);
+  background: var(--primary);
   width: 100%;
 }
-.fancyDivider {
-  background-image: url("/star.png");
-  background-repeat: repeat no-repeat;
-  background-position: center left;
-  background-size: 14px 9px;
-  height: 9px;
-  width: 100%;
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 48px 0px 48px 0px;
+}
+.displayTitle {
+  text-align: center;
+  line-height: 97%;
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.19 * (100vw - 40px));
+}
+.displayTitleItalic {
+  text-align: center;
+  line-height: 97%;
+  font-style: italic;
+  font-family: "EditorialItalic" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.19 * (100vw - 40px));
+}
+.imageWrapper {
+  width: calc(66vw - 40px);
+  aspect-ratio: 1080/876;
+  position: relative;
+}
+.subtitle {
+  text-align: center;
+  font-size: 17px;
+  line-height: 130%;
+  width: calc(100% - 12px);
+  max-width: 310px;
+  margin-top: 4px;
 }
 @media screen and (min-width: 550px) {
   .container {
     width: 100%;
     padding: 16px 40px 32px 40px;
-    background-color: var(--primary);
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -61,7 +86,7 @@
   }
 }
 @media screen and (min-width: 900px) {
-  .featuredWorksWrapper {
+  .contentWrapper {
     display: grid;
     grid-template-columns: 1fr 10px 1fr;
     grid-template-rows: 1fr;
@@ -70,15 +95,6 @@
     gap: 40px;
     margin: 32px 0px;
     height: fit-content;
-    position: relative;
-  }
-  .fancyDivider {
-    background-image: url("/starHorizontal.png");
-    background-repeat: no-repeat repeat;
-    background-position: top center;
-    background-size: 10px 14px;
-    height: 100%;
-    width: 10px;
     position: relative;
   }
 }
