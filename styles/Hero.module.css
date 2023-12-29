@@ -47,11 +47,11 @@
   width: auto;
   height: 100%;
 }
-.titleWrapper,
-.titleWrapperDesktop {
+.titleWrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .title,
@@ -106,10 +106,6 @@
   flex-wrap: nowrap;
 }
 
-.titleWrapperDesktop {
-  display: none;
-}
-
 @media screen and (min-width: 550px) {
   .button:hover {
     background-color: var(--primary);
@@ -129,7 +125,7 @@
   .titleWrapper {
     display: none;
   }
-  .titleWrapperDesktop {
+  .titleWrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -157,6 +153,12 @@
 @media screen and (min-width: 900px) {
   .title {
     font-size: calc(0.16 * (60vw - 40px));
+  }
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    text-align: left;
   }
   .titleTop,
   .titleBottom {

@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../styles/AboutMason.module.css";
+import styles from "../styles/HomepageAbout.module.css";
 import FeaturedWorkLarge from "./FeaturedWorkLarge";
 import Image from "next/image";
 
-export default function AboutMason() {
+export default function HomepageAbout() {
   return (
     <div className={styles.container}>
       <div className={styles.titleWrapper}>
@@ -11,13 +11,17 @@ export default function AboutMason() {
       </div>
       <div className={styles.divider}>{""}</div>
       <div className={styles.contentWrapper}>
-        <h4 className={styles.displayTitle}>Technical Development</h4>
+        <h4 class="titleDisplay">
+          Technical
+          <br />
+          Development
+        </h4>
         <div className={styles.imageWrapper}>
           <Image src={"/hat.png"} fill />
         </div>
-        <h4 className={styles.displayTitle}>
+        <h4 class="titleDisplay">
           And&nbsp;
-          <span className={styles.displayTitleItalic}>Design</span>
+          <span class="titleDisplay italic">Design</span>
         </h4>
         <p className={styles.subtitle}>
           Freelance <strong>DEVELOPER</strong> and{" "}

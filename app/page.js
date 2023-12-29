@@ -1,6 +1,8 @@
-import AboutMason from "@/components/AboutMason";
-import Hero from "@/components/Hero";
-import SelectedWorks from "@/components/SelectedWorks";
+import HomepageAbout from "@/components/HomepageAbout";
+import HomepageHero from "@/components/HomepageHero";
+import HomepageServices from "@/components/HomepageServices";
+import HomepageMoreWorks from "@/components/HomepageMoreWorks";
+import HomepageSelectedWorks from "@/components/HomepageSelectedWorks";
 import { createClient } from "contentful";
 
 async function Home() {
@@ -10,11 +12,17 @@ async function Home() {
   });
   const res = await client.getEntries({ content_type: "clientList" });
 
+  const projects = res.items
+    .slice()
+    .sort((a, b) => b.fields.number - a.fields.number);
+
   return (
     <main>
-      <Hero />
-      <SelectedWorks selectedWorks={res.items} />
-      <AboutMason />
+      <HomepageHero />
+      <HomepageSelectedWorks projects={projects} />
+      <HomepageAbout />
+      <HomepageServices />
+      <HomepageMoreWorks projects={projects} />
     </main>
   );
 }

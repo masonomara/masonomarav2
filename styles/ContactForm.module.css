@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 58px;
+  margin-bottom: 41px;
 }
 
 .title {
@@ -60,6 +60,8 @@
   align-items: center;
   width: 100%;
   position: relative;
+  padding-bottom: 64px;
+  border-bottom: 2px solid var(--primary);
 }
 .formHeader {
   font-size: 14px;

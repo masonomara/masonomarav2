@@ -103,35 +103,33 @@
 .fullMenuWrapperOpen {
   border-left: 1px solid var(--border);
   background-color: var(--background);
-  min-width: 280px;
-  max-width: 340px;
-  width: 85%;
+  width: 100%;
   position: fixed;
   top: 0px;
-  height: 100vh;
+  height: calc(100vh + 16px);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1px auto;
-  right: 0px;
   padding: 52px 24px 90px;
-  height: 100%;
+  height: calc(100% + 16px);
   transition: 200ms ease-out all;
 }
 .fullMenuWrapperClosed {
   border-left: 1px solid var(--border);
   background-color: var(--background);
-  min-width: 280px;
-  max-width: 340px;
-  width: 85%;
+  width: 100%;
   position: fixed;
-  top: 0px;
-  height: 100vh;
+  height: calc(100vh - 16px);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1px auto;
-  right: -100%;
+  top: calc(-100vh - 16px);
   padding: 52px 24px 90px;
-  height: 100%;
+  height: calc(100% + 16px);
   transition: 200ms ease-in all;
 }
 .fullMenuItem {
@@ -240,7 +238,7 @@
     box-shadow: 0px 1px 0px 0px var(--primary);
     font-size: 16px;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 130%;
     text-transform: uppercase;
     letter-spacing: -0.02em;

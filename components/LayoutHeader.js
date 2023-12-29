@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
 import Link from "next/link";
 
-export default function Header() {
+export default function LayoutHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenu = () => {
@@ -130,7 +130,7 @@ export default function Header() {
         <div className={styles.menuDesktop}>
           <Link
             className={styles.menuButton}
-            href={"/about-cureader"}
+            href={"/portfolio"}
             target={"_top"}
           >
             <span className={styles.menuText}>Portfolio</span>
@@ -151,6 +151,9 @@ export default function Header() {
           </Link>
           <Link className={styles.menuButton} href={"/contact"} target={"_top"}>
             <span className={styles.menuText}>Blog</span>
+          </Link>
+          <Link className={styles.menuButton} href={"/contact"} target={"_top"}>
+            <span className={styles.menuText}>Contact</span>
           </Link>
         </div>
         <Link className={styles.cta} target="_top" href="/contact">

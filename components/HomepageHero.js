@@ -3,27 +3,19 @@ import Link from "next/link";
 import React from "react";
 import styles from "../styles/Hero.module.css";
 
-export default function Hero() {
+export default function HomepageHero() {
   return (
     <div className={styles.container}>
       <div className={styles.contentTop}>
         <div className={styles.titleWrapper}>
-          <h2 className={`${styles.title} ${styles.titleTop}`}>
+          <h2 class="titleDisplay">
             Scalabale <br />
             Development
           </h2>
-          <h2 className={`${styles.title} ${styles.titleBottom}`}>
+          <h2 class="italic titleDisplay">
             Creative
             <br />
             Application
-          </h2>
-        </div>
-        <div className={styles.titleWrapperDesktop}>
-          <h2 className={`${styles.title} ${styles.titleTop}`}>
-            Scalabale Development
-          </h2>
-          <h2 className={`${styles.title} ${styles.titleBottom}`}>
-            Creative Application
           </h2>
         </div>
         <p className={styles.subtitle}>

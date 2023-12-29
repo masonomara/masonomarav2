@@ -127,3 +127,81 @@ option:disabled {
 *::selection {
   background: #af191013;
 }
+
+.titleDisplay {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.19 * (100vw - 40px));
+  line-height: 97%;
+}
+.titleLarge {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.171 * (100vw - 40px));
+  line-height: 97%;
+}
+.titleMedium {
+}
+.titleSmall {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.109 * (100vw - 40px));
+  line-height: 97%;
+}
+.titleTiny {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.9 * (100vw - 40px));
+  line-height: 97%;
+}
+@media screen and (min-width: 550px) {
+  .titleDisplay {
+    font-size: 89.3px;
+  }
+  .titleLarge {
+    font-size: 87px;
+  }
+  .titleMedium {
+  }
+  .titleSmall {
+    font-size: 51.23px;
+  }
+  .titleTiny {
+  }
+}
+@media screen and (min-width: 900px) {
+  .titleDisplay {
+    font-size: calc(0.16 * (60vw - 40px));
+  }
+  .titleLarge {
+    font-size: calc(0.144 * (50vw - 40px));
+  }
+  .titleMedium {
+  }
+  .titleSmall {
+  }
+  .titleTiny {
+  }
+}
+@media screen and (min-width: 1280px) {
+  .titleDisplay {
+    font-size: 116px;
+  }
+  .titleLarge {
+    font-size: 83px;
+  }
+  .titleMedium {
+  }
+  .titleSmall {
+  }
+  .titleTiny {
+  }
+}
+.italic {
+  font-family: "EditorialItalic" !important;
+  font-style: italic!important;
+}

@@ -1,7 +1,8 @@
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
+import LayoutHeader from "../components/LayoutHeader";
 import { Analytics } from "@vercel/analytics/react";
+import LayoutFooter from "@/components/LayoutFooter";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -21,9 +22,10 @@ async function Layout({ children }) {
   return (
     <html lang="en">
       <body className={`${publicSans.className}`}>
-        <Header />
+        <LayoutHeader />
         {children}
         <Analytics />
+        <LayoutFooter />
       </body>
     </html>
   );

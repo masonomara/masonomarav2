@@ -87,7 +87,6 @@ const ContactForm = () => {
               className={styles.formInputOption}
               value="None selected"
               disabled
-             
             >
               Select your option
             </option>

@@ -6,16 +6,14 @@ export default function FeaturedWorkLarge({ project }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <h2 className={styles.title}>
-          {project?.fields.title || "Project Title"}
-        </h2>
+        <h2 class="titleLarge">{project?.fields.title || "Project Title"}</h2>
         <p className={styles.subtitle}>
           {project?.fields.subtitle || "Project Subtitle"}
         </p>
       </div>
       <div className={styles.imageWrapper}>
         <Image
-          src={"https:" + project?.fields.coverImage.fields.file.url}
+          src={"https:" + project?.fields.coverImage.fields.file.url || null}
           fill
         />
       </div>
