@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/HomepageAbout.module.css";
-import FeaturedWorkLarge from "./FeaturedWorkLarge";
 import Image from "next/image";
 
 export default function HomepageAbout() {
@@ -11,17 +10,17 @@ export default function HomepageAbout() {
       </div>
       <div className={styles.divider}>{""}</div>
       <div className={styles.contentWrapper}>
-        <h4 class="titleDisplay">
+        <h4 className="titleDisplay">
           Technical
           <br />
           Development
         </h4>
         <div className={styles.imageWrapper}>
-          <Image src={"/hat.png"} fill />
+          <Image src={"/hat.png"} fill alt={"Mason's Hat"} sizes="50vw" />
         </div>
-        <h4 class="titleDisplay">
+        <h4 className="titleDisplay">
           And&nbsp;
-          <span class="titleDisplay italic">Design</span>
+          <span className="titleDisplay italic">Design</span>
         </h4>
         <p className={styles.subtitle}>
           Freelance <strong>DEVELOPER</strong> and{" "}

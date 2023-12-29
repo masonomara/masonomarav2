@@ -18,27 +18,37 @@ export default function LayoutFooter() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.linksWrapper}>
-          <Link href={"/"} target={"_top"} className={styles.linkWrapper}>
+          <Link
+            href={"/portfolio"}
+            target={"_top"}
+            className={styles.linkWrapper}
+          >
             <p className={styles.linkTitle}>Portfolio</p>
             <p className={styles.linkSubtitle}>Projects I've worked on.</p>
           </Link>
-          <Link href={"/"} target={"_top"} className={styles.linkWrapper}>
+          <Link
+            href={"/services"}
+            target={"_top"}
+            className={styles.linkWrapper}
+          >
             <p className={styles.linkTitle}>Services</p>
-            <p className={styles.linkSubtitle}>Services I offer.</p>
+            <p className={styles.linkSubtitle}>My services I offer.</p>
           </Link>
-          <Link href={"/"} target={"_top"} className={styles.linkWrapper}>
+          <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
             <p className={styles.linkTitle}>About</p>
-            <p className={styles.linkSubtitle}>More about me.</p>
+            <p className={styles.linkSubtitle}>Background on me.</p>
           </Link>
-          <Link href={"/"} target={"_top"} className={styles.linkWrapper}>
+          <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
             <p className={styles.linkTitle}>Blog</p>
-            <p className={styles.linkSubtitle}>My latest articles.</p>
+            <p className={styles.linkSubtitle}>Background on me.</p>
           </Link>
-          <Link href={"/"} target={"_top"} className={styles.linkWrapper}>
+          <Link
+            href={"/contact"}
+            target={"_top"}
+            className={styles.linkWrapper}
+          >
             <p className={styles.linkTitle}>Contact</p>
-            <p className={styles.linkSubtitle}>
-              New business and inquiries.
-            </p>
+            <p className={styles.linkSubtitle}>New business and inquiries.</p>
           </Link>
         </div>
         <Link href={"/contact"} target={"_top"} className={styles.button}>

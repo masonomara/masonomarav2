@@ -8,11 +8,11 @@ export default function HomepageHero() {
     <div className={styles.container}>
       <div className={styles.contentTop}>
         <div className={styles.titleWrapper}>
-          <h2 class="titleDisplay">
+          <h2 className="titleDisplay">
             Scalabale <br />
             Development
           </h2>
-          <h2 class="italic titleDisplay">
+          <h2 className="italic titleDisplay">
             Creative
             <br />
             Application
@@ -28,7 +28,13 @@ export default function HomepageHero() {
       </div>
       <div className={styles.contentBottom}>
         <div className={styles.image}>
-          <Image src={"/headshot.png"} fill />
+          <Image
+            src={"/headshot.png"}
+            priority
+            fill
+            alt={"Mason's Headshot"}
+            sizes="50vw"
+          />
         </div>
       </div>
     </div>

@@ -1,28 +1,17 @@
+import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import React from "react";
-import FeaturedWorkLarge from "@/components/FeaturedWorkLarge";
-import { createClient } from "contentful";
-import styles from "../../styles/Portfolio.module.css";
+import styles from "../../styles/ContactForm.module.css";
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Contact",
 };
 
-async function Portfolio() {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  });
-  const res = await client.getEntries({ content_type: "clientList" });
-
-  const projects = res.items
-    .slice()
-    .sort((a, b) => b.fields.number - a.fields.number);
-
+export default function Services() {
   return (
     <div className={styles.container}>
       <div className={styles.contentWrapper}>
-        <h2 className={styles.title}>Contact</h2>
+        <h2 className={styles.title}>Services</h2>
         <p className={styles.subtitle}>
           Mason O’Mara has experience handling custom mobile and web
           applications, e-commerce solutions, web design, branding, business
@@ -47,22 +36,7 @@ async function Portfolio() {
           <p>1301 Corlies Ave, Neptune NJ Suite 2D</p>
         </Link>
       </div>
-      <div className={styles.container}>
-        <div className={styles.divider}>{""}</div>
-        <div className={styles.featuredWorksWrapper}>
-          <FeaturedWorkLarge project={projects[0]} />
-          <div className={styles.fancyDivider}>{""}</div>
-          <FeaturedWorkLarge project={projects[1]} />
-          <div className={styles.fancyDivider}>{""}</div>
-          <FeaturedWorkLarge project={projects[2]} />
-          <div className={styles.fancyDivider}>{""}</div>
-          <FeaturedWorkLarge project={projects[3]} />
-          <div className={styles.fancyDivider}>{""}</div>
-          <FeaturedWorkLarge project={projects[5]} />
-        </div>
-      </div>
+      <ContactForm />
     </div>
   );
 }
-
-export default Portfolio;
