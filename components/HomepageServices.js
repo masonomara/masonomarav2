@@ -19,7 +19,7 @@ export default function HomepageServices() {
             </p>
           </div>
           <div className={styles.displayTitleImageWrapper}>
-            <Image src={"/redArrow.png"} fill alt={"arrow"} sizes="10vw" />
+            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
           </div>
           {/* <Link href={"https://masonomara.com"} className={styles.readMoreLink}>
             <span>Read More</span>
@@ -35,7 +35,7 @@ export default function HomepageServices() {
             </p>
           </div>
           <div className={styles.displayTitleImageWrapper}>
-            <Image src={"/redArrow.png"} fill alt={"arrow"} sizes="10vw" />
+            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
           </div>
         </Link>
         <div className={styles.fancyDivider}>{""}</div>
@@ -47,7 +47,7 @@ export default function HomepageServices() {
             </p>
           </div>
           <div className={styles.displayTitleImageWrapper}>
-            <Image src={"/redArrow.png"} fill alt={"arrow"} sizes="10vw" />
+            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
           </div>
         </Link>
       </div>

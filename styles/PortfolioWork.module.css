@@ -1,0 +1,216 @@
+.container {
+  transition: 200ms ease all;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  background-color: var(--background);
+  border-radius: 16px;
+  height: fit-content;
+  padding: 16px 16px 12px 16px;
+  margin-bottom: 0px;
+}
+.containerOpen {
+  transition: 200ms ease all;
+  display: flex;
+  flex-direction: column;
+  color: var(--background);
+  background-color: var(--primary);
+  border-radius: 16px;
+  padding: 16px 16px 16px 16px;
+  margin-bottom: 8px;
+}
+.fancyDivider {
+  transition: 200ms ease all;
+  background-image: url("/starRed.png");
+  background-repeat: repeat no-repeat;
+  background-position: center left;
+  background-size: 14px 9px;
+  height: 9px;
+  width: 100%;
+}
+.fancyDividerOpen {
+  transition: 200ms ease all;
+  background-image: url("/star.png");
+  background-repeat: repeat no-repeat;
+  background-position: center left;
+  background-size: 14px 9px;
+  height: 9px;
+  width: 100%;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  flex-direction: row;
+  column-gap: 20px;
+  padding-top: 28px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+.wrapperOpen {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  flex-direction: row;
+  column-gap: 20px;
+  padding-top: 28px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+}
+.imageWrapper {
+  aspect-ratio: 4/5 !important;
+  position: relative;
+  transition: 200ms ease-in all;
+  display: flex;
+  cursor: pointer;
+}
+.content {
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.contentOpen {
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+.titleWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 4px;
+}
+.chevronArrowWrapper {
+  position: relative;
+  height: 28px;
+  aspect-ratio: 1/1;
+  transform: rotate(90deg);
+  transition: 200ms ease all;
+}
+.chevronArrowWrapperOpen {
+  transition: 200ms ease all;
+  position: relative;
+  height: 28px;
+  aspect-ratio: 1/1;
+  transform: rotate(270deg);
+}
+.expandArrow {
+  opacity: 1;
+}
+.expandArrowOpen {
+  opacity: 1;
+}
+.chevronArrowWrapperOpen .expandArrowOpen {
+  opacity: 0;
+}
+.subtitle {
+  text-align: left;
+  font-size: 17px;
+  line-height: 130%;
+  margin-top: 4px;
+  width: 100%;
+}
+.infoWrapper {
+  margin-top: 0px;
+  transition: 200ms ease all;
+  opacity: 0;
+  height: 0px;
+  grid-column: span 2;
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.infoWrapperOpen {
+  margin-top: 20px;
+  transition: 200ms ease all;
+  opacity: 1;
+  position: relative;
+  height: 466px;
+  grid-column: span 2;
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.descriptionheader {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+.description {
+  text-align: left;
+  font-size: 15px;
+  line-height: 130%;
+  margin-top: 2px;
+  width: 100%;
+}
+.descriptionLink {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.descriptionLink img {
+  margin-bottom: -2.5px;
+}
+.photoGalleryWrapper {
+  width: 100%;
+  grid-column: span 2;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 8px;
+  position: relative;
+  height: 200px;
+  border-radius: 8px;
+}
+.photoGalleryWrapper::-webkit-scrollbar {
+  display: none;
+}
+.photoGallery {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: fit-content;
+  height: 200px;
+}
+.photo {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  pointer-events: none;
+}
+
+
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 87px;
+    text-align: left;
+  }
+  .wrapper {
+    max-width: 455px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+    font-size: calc(0.144 * (50vw - 130px));
+    text-align: left;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: -8px;
+  }
+}

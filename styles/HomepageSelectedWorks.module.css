@@ -16,6 +16,7 @@
 .featuredWorksWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 .titleWrapper {
@@ -58,6 +59,9 @@
     border-top-left-radius: 16px;
     margin-top: -16px;
     z-index: 1;
+  }
+  .fancyDivider {
+    max-width: 455px;
   }
 }
 @media screen and (min-width: 900px) {

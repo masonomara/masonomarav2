@@ -9,7 +9,8 @@
   align-items: center;
   padding: 32px 0px;
   width: calc((100% / 2) - 10px);
-  text-shadow: 0px 0px 8px rgba(175, 25, 16, 0.60);
+  text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
+    0px 0px 24px rgba(175, 25, 16, 1);
 }
 .imageWrapper {
   aspect-ratio: 4/5;
@@ -23,24 +24,12 @@
   transform: rotate(3.5deg);
   transition: 200ms ease-out all;
 }
-.title {
-  font-family: "EditorialRegular" !important;
-  font-weight: 400 !important;
-  letter-spacing: -0.025em !important;
-  text-align: left;
-  width: 100%;
-  line-height: 97%;
-  font-size: calc(0.109 * (100vw - 40px));
-  text-shadow: 0px 0px 8px rgba(175, 25, 16, 0.60);
-}
 .subtitle {
   text-align: left;
   font-size: 15px;
   line-height: 130%;
-  width: 75%;
   margin-top: 2px;
   width: 100%;
-  text-shadow: 0px 0px 8px rgba(175, 25, 16, 0.60);
 }
 .content {
   width: 100%;

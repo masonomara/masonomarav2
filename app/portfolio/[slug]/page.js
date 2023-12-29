@@ -49,7 +49,7 @@ export default async function portfolioPage({ params }) {
     <div>
       <Link href={"/portfolio"}>
         <span>Full portfolio</span>
-        <Image alt={"arrow"} src={"/redArrow.png"} width={18} height={18} />
+        <Image alt={"arrow"} src={"/arrowRed.png"} width={18} height={18} />
       </Link>
       <h1>{project.fields.title}</h1>
     </div>

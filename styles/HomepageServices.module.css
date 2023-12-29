@@ -55,7 +55,7 @@
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
-  font-size: calc(0.121 * (100vw - 40px));
+  font-size: calc(0.114 * (100vw - 40px));
 }
 .displayTitleItalic {
   text-align: left;
@@ -64,7 +64,7 @@
   font-family: "EditorialItalic" !important;
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
-  font-size: calc(0.121 * (100vw - 40px));
+  font-size: calc(0.114 * (100vw - 40px));
 }
 .serviceDescrption {
   text-align: left;
@@ -102,7 +102,7 @@
 }
 .displayTitleImageWrapper {
   position: relative;
-  height: calc(((0.121 * (100vw - 40px)) * 0.97) - 14px);
+  height: calc(((0.114 * (100vw - 40px)) * 0.97) - 14px);
   margin-top: 4px;
   aspect-ratio: 1 / 1;
   /* border: 1px solid blue; */
@@ -114,12 +114,22 @@
     background-color: var(--background);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     margin-top: -16px;
     z-index: 1;
+  }
+  .contentWrapper {
+    max-width: 455px;
+  }
+  .displayTitle,
+  .displayTitleItalic {
+    font-size: 58px;
+  }
+  .displayTitleImageWrapper {
+    height: 42px;
   }
 }
 @media screen and (min-width: 900px) {

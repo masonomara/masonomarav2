@@ -143,6 +143,11 @@ option:disabled {
   line-height: 97%;
 }
 .titleMedium {
+  line-height: 97%;
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.114 * (100vw - 40px));
 }
 .titleSmall {
   font-family: "EditorialRegular" !important;
@@ -203,5 +208,5 @@ option:disabled {
 }
 .italic {
   font-family: "EditorialItalic" !important;
-  font-style: italic!important;
+  font-style: italic !important;
 }
