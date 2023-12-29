@@ -23,7 +23,7 @@ export default function LayoutFooter() {
             target={"_top"}
             className={styles.linkWrapper}
           >
-            <p className={styles.linkTitle}>Portfolio</p>
+            <p className="titleTiny">Portfolio</p>
             <p className={styles.linkSubtitle}>Projects I've worked on.</p>
           </Link>
           <Link
@@ -31,15 +31,15 @@ export default function LayoutFooter() {
             target={"_top"}
             className={styles.linkWrapper}
           >
-            <p className={styles.linkTitle}>Services</p>
+            <p className="titleTiny">Services</p>
             <p className={styles.linkSubtitle}>My services I offer.</p>
           </Link>
           <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
-            <p className={styles.linkTitle}>About</p>
+            <p className="titleTiny">About</p>
             <p className={styles.linkSubtitle}>Background on me.</p>
           </Link>
           <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
-            <p className={styles.linkTitle}>Blog</p>
+            <p className="titleTiny">Blog</p>
             <p className={styles.linkSubtitle}>Background on me.</p>
           </Link>
           <Link
@@ -47,32 +47,34 @@ export default function LayoutFooter() {
             target={"_top"}
             className={styles.linkWrapper}
           >
-            <p className={styles.linkTitle}>Contact</p>
+            <p className="titleTiny">Contact</p>
             <p className={styles.linkSubtitle}>New business and inquiries.</p>
           </Link>
         </div>
-        <Link href={"/contact"} target={"_top"} className={styles.button}>
-          Get Started
-        </Link>
-        <div className={styles.subtitleWrapper}>
-          <span className={styles.subtitle}>
-            New business and inquiries to{" "}
-            <Link
-              href={"mailto:mason.omara@gamil.com"}
-              target={"_blank"}
-              className={styles.emailLink}
-            >
-              <span>mason.omara@gmail.com</span>
-            </Link>
-            .
-          </span>
-          <span className={styles.subtitle}>
-            Currently based in Neptune, NJ.
-          </span>
-          <span className={styles.subtitle}>
-            Focuses include websites, branding, apps, e-commerce, and product
-            design.
-          </span>
+        <div className={styles.footerBottom}>
+          <Link href={"/contact"} target={"_top"} className={styles.button}>
+            Get Started
+          </Link>
+          <div className={styles.subtitleWrapper}>
+            <span className={styles.subtitle}>
+              New business and inquiries to{" "}
+              <Link
+                href={"mailto:mason.omara@gamil.com"}
+                target={"_blank"}
+                className={styles.emailLink}
+              >
+                <span>mason.omara@gmail.com</span>
+              </Link>
+              .
+            </span>
+            <span className={styles.subtitle}>
+              Currently based in Neptune, NJ.
+            </span>
+            <span className={styles.subtitle}>
+              Focuses include websites, branding, apps, e-commerce, and product
+              design.
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -188,12 +188,8 @@
 
 
 @media screen and (min-width: 550px) {
-  .title {
-    font-size: 87px;
-    text-align: left;
-  }
-  .wrapper {
-    max-width: 455px;
+  .titleWrapper {
+    padding-top: 8px;
   }
 }
 

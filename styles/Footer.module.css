@@ -6,10 +6,12 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
+  height: fit-content;
 }
 .wrapper {
   max-width: 1280px;
-  padding: 48px 20px 24px 20px;
+  width: 100%;
+  padding: 0px 20px 24px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,20 +26,13 @@
 .linksWrapper {
   width: 100%;
   margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
-  row-gap: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.linkWrapper {
-  width: calc((100% - 40px) / 3);
-  gap: 0px;
-  display: flex;
-  flex-direction: column;
+  row-gap: 30px;
+  border-top: 2px solid var(--primary);
+  margin-top: 64px;
+  padding-top: 48px;
 }
 .linkTitle {
   font-family: "EditorialRegular" !important;
@@ -103,17 +98,52 @@
   transition: 100ms ease-in all;
   flex-wrap: nowrap;
 }
-@media screen and (min-width: 900px) {
-  .container {
-    height: 60px;
+@media screen and (min-width: 550px) {
+  .wrapper {
+    max-width: 1280px;
+    padding: 0px 40px 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
+@media screen and (min-width: 900px) {
   .wrapper {
     width: 100%;
     max-width: 1280px;
-    padding: 8px 40px;
+    padding: 8px 40px 32px 40px;
     gap: 32px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .linksWrapper {
+    border-top: 2px solid var(--primary);
+    margin-top: 96px;
+    padding-top: 48px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .footerBottom {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button {
+    height: 56px;
+    width: flex;
+    max-width: 460px
+  }
+  .subtitleWrapper {
+    width: flex;
+    max-width: calc((100% - 20px) / 2);
   }
   .button:hover {
     background-color: var(--primary);

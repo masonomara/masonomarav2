@@ -124,7 +124,7 @@ const ContactForm = () => {
         </label>
         <textarea
           rows={5}
-          placeholder="Aything you would like to share"
+          placeholder="Any additional details you would like to share."
           className={styles.formInputDetails}
           {...register("details", { required: true })}
         ></textarea>

@@ -160,7 +160,7 @@ option:disabled {
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
-  font-size: calc(0.9 * (100vw - 40px));
+  font-size: calc(0.075 * (100vw - 40px));
   line-height: 97%;
 }
 @media screen and (min-width: 550px) {
@@ -171,11 +171,13 @@ option:disabled {
     font-size: 87px;
   }
   .titleMedium {
+    font-size: 53.58px;
   }
   .titleSmall {
     font-size: 51.23px;
   }
   .titleTiny {
+    font-size: 35.25px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -190,6 +192,7 @@ option:disabled {
   .titleSmall {
   }
   .titleTiny {
+    font-size: calc(0.044 * (100vw - 80px));
   }
 }
 @media screen and (min-width: 1280px) {
@@ -204,6 +207,7 @@ option:disabled {
   .titleSmall {
   }
   .titleTiny {
+    font-size: 52.8px;
   }
 }
 .italic {
