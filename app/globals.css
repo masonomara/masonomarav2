@@ -95,6 +95,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: -66px;
+  z-index: 101;
+}
+@media screen and (min-width: 900px) {
+  main {
+    margin-bottom: -106px;
+  }
 }
 
 a {
