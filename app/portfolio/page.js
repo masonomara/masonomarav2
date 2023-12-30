@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import FeaturedWorkLarge from "@/components/FeaturedWorkLarge";
 import { createClient } from "contentful";
 import styles from "../../styles/Portfolio.module.css";
 import PortfolioWork from "@/components/PortfolioWork";
@@ -22,6 +20,13 @@ async function Portfolio() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.contentWrapper}>
+        <h1 className="titleDisplay">Portfolio</h1>
+        <p className={styles.subtitle}>
+          A collection of projects I've worked on, including custom mobile and
+          web applications to successful e-commerce solutions.
+        </p>
+      </div>
       <div className={styles.featuredWorksWrapper}>
         {projects.map((project, index) => (
           <React.Fragment key={index}>

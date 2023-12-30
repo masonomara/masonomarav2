@@ -11,11 +11,11 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.contentWrapper}>
-        <h2 className={styles.title}>Contact</h2>
+        <h1 className={styles.title}>Contact</h1>
         <p className={styles.subtitle}>
-          Mason O’Mara has experience handling custom mobile and web
-          applications, e-commerce solutions, web design, branding, business
-          workflows, and product scalability.
+          Experience in building custom mobile and web applications, e-commerce
+          solutions, web design, branding, business workflows, and product
+          scalability.
         </p>
         <p className={styles.header}>New Business & Inquiries</p>
         <Link
