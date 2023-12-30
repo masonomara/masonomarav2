@@ -12,8 +12,14 @@ export default function PortfolioWork({ project }) {
     setProjectOpen(!projectOpen);
   };
 
+  const handleChildElementClick = (e) => {
+    e.stopPropagation();
+    // Do other stuff here
+  };
+
   return (
     <div
+      onClick={handleProjectClick}
       id={`${project.fields.slug}`}
       className={projectOpen ? styles.containerOpen : styles.container}
     >
@@ -23,7 +29,7 @@ export default function PortfolioWork({ project }) {
         {""}
       </div>
       <div className={projectOpen ? styles.wrapperOpen : styles.wrapper}>
-        <div className={styles.imageWrapper} onClick={handleProjectClick}>
+        <div className={styles.imageWrapper}>
           <Image
             alt={project?.fields.title}
             src={"https:" + project?.fields.coverImage.fields.file.url || null}
@@ -32,10 +38,7 @@ export default function PortfolioWork({ project }) {
             priority
           />
         </div>
-        <div
-          onClick={handleProjectClick}
-          className={projectOpen ? styles.contentOpen : styles.content}
-        >
+        <div className={projectOpen ? styles.contentOpen : styles.content}>
           <div className={styles.titleWrapper}>
             <h2 className="titleMedium">
               {project?.fields.title || "Project Title"}
@@ -71,13 +74,13 @@ export default function PortfolioWork({ project }) {
         </div>
         <div
           className={projectOpen ? styles.infoWrapperOpen : styles.infoWrapper}
-          onClick={null}
         >
           <div className={styles.descriptionWrapper}>
             <p className={styles.descriptionheader}>Overview</p>
             <span className={styles.description}>
               {project?.fields.highlight1}&nbsp;
               <Link
+                onClick={(e) => handleChildElementClick(e)}
                 className={`${styles.description} ${styles.descriptionLink}`}
                 href={"/portfolio/" + project.fields.slug}
               >
@@ -109,6 +112,7 @@ export default function PortfolioWork({ project }) {
             <p className={styles.descriptionheader}>Website</p>
             <span className={styles.description}>
               <Link
+                onClick={(e) => handleChildElementClick(e)}
                 className={`${styles.description} ${styles.descriptionLink}`}
                 href={project.fields.url}
               >
