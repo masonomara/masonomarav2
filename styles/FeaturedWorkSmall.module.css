@@ -11,6 +11,7 @@
   width: calc((100% / 2) - 10px);
   text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
     0px 0px 24px rgba(175, 25, 16, 1);
+    text-align: center;
 }
 .imageWrapper {
   aspect-ratio: 4/5;
@@ -25,7 +26,7 @@
   transition: 200ms ease-out all;
 }
 .subtitle {
-  text-align: left;
+  text-align: center;
   font-size: 15px;
   line-height: 130%;
   margin-top: 2px;
@@ -39,10 +40,11 @@
   flex-direction: column;
 }
 
+
 @media screen and (min-width: 550px) {
   .title {
     font-size: 87px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -81,13 +83,13 @@
     font-family: "EditorialRegular" !important;
     font-weight: 400 !important;
     letter-spacing: -0.025em !important;
-    text-align: left;
+    text-align: center;
     width: 100%;
     line-height: 97%;
     font-size: calc(0.171 * (100vw - 40px));
   }
   .subtitle {
-    text-align: left;
+    text-align: center;
     margin-bottom: 23px;
     font-size: 17px;
     line-height: 130%;
@@ -105,7 +107,7 @@
   }
   .title {
     font-size: calc(0.144 * (50vw - 130px));
-    text-align: left;
+    text-align: center;
   }
   .wrapper {
     color: var(--background);
