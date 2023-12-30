@@ -13,6 +13,10 @@ export default function FeaturedWorkLarge({ project }) {
         <p className={styles.subtitle}>
           {project?.fields.subtitle || "Project Subtitle"}
         </p>
+        <span className={styles.readMore}>
+          Read More
+          <Image src={"/arrowSmall.png"} height={19} width={19} />
+        </span>
       </div>
       <div className={styles.imageWrapper}>
         <Image
