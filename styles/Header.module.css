@@ -201,6 +201,11 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 550px) {
+  .wrapper {
+    padding: 8px 40px;
+  }
+}
 @media screen and (min-width: 900px) {
   .container {
     height: 60px;
