@@ -137,19 +137,15 @@ export default function LayoutHeader() {
           </Link>
           <Link
             className={styles.menuButton}
-            href={"/about-cureader"}
+            href={"/services"}
             target={"_top"}
           >
             <span className={styles.menuText}>Services</span>
           </Link>
-          <Link
-            className={styles.menuButton}
-            href={"/what-is-rss"}
-            target={"_top"}
-          >
+          <Link className={styles.menuButton} href={"/about"} target={"_top"}>
             <span className={styles.menuText}>About</span>
           </Link>
-          <Link className={styles.menuButton} href={"/contact"} target={"_top"}>
+          <Link className={styles.menuButton} href={"/blog"} target={"_top"}>
             <span className={styles.menuText}>Blog</span>
           </Link>
           <Link className={styles.menuButton} href={"/contact"} target={"_top"}>
