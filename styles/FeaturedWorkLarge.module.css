@@ -53,6 +53,14 @@
   text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
     0px 0px 24px rgba(175, 25, 16, 1);
 }
+.readMore {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 19px;
+}
+.readMore img {
+  margin-bottom: -3.5px;
+}
 @media screen and (min-width: 550px) {
   .title {
     font-size: 87px;
