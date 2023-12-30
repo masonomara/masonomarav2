@@ -32,15 +32,15 @@ export default function LayoutFooter() {
             className={styles.linkWrapper}
           >
             <p className="titleTiny">Services</p>
-            <p className={styles.linkSubtitle}>My services I offer.</p>
+            <p className={styles.linkSubtitle}>Services I offer.</p>
           </Link>
           <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">About</p>
-            <p className={styles.linkSubtitle}>Background on me.</p>
+            <p className={styles.linkSubtitle}>03</p>
           </Link>
           <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">Blog</p>
-            <p className={styles.linkSubtitle}>Background on me.</p>
+            <p className={styles.linkSubtitle}>04</p>
           </Link>
           <Link
             href={"/contact"}
