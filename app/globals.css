@@ -261,14 +261,16 @@ option:disabled {
 }
 @media screen and (min-width: 900px) {
   .titleDisplay {
-    font-size: calc(0.16 * (60vw - 40px));
+    font-size: calc(0.16 * (60vw - 80px));
   }
   .titleLarge {
-    font-size: calc(0.144 * (50vw - 40px));
+    font-size: calc(0.144 * (50vw - 80px));
   }
   .titleMedium {
+    font-size: calc(0.066 * (100vw - 80px));
   }
   .titleSmall {
+    font-size: calc(0.096 * (60vw - 80px));
   }
   .titleTiny {
     font-size: calc(0.044 * (100vw - 80px));
@@ -277,15 +279,19 @@ option:disabled {
     font-size: 97px;
   }
 }
+@media screen and (min-width: 1112px) {
+  .titleMedium {
+    font-size: 66.07px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .titleDisplay {
-    font-size: 116px;
+    font-size: 110.176px;
   }
   .titleLarge {
-    font-size: 83px;
+    font-size: 80.64px;
   }
-  .titleMedium {
-  }
+
   .titleSmall {
   }
   .titleTiny {

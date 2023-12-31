@@ -112,7 +112,7 @@ export default function LayoutHeader() {
                 target={"_top"}
               >
                 <span className="titleSmall">Blog</span>
-                <span className={styles.fullMenuItemDescription}>Blog</span>
+                <span className={styles.fullMenuItemDescription}>Insights and advice I wrote.</span>
               </Link>
               <Link
                 className={styles.fullMenuItem}

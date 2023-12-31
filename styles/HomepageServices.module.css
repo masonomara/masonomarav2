@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: fit-content;
-  padding: 16px 20px 36px 20px;
+  padding: 16px 20px 48px 20px;
   background-color: var(--background);
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1200px;
 }
 .title {
   font-size: 18px;
@@ -31,6 +32,7 @@
   height: 2px;
   background: var(--primary);
   width: 100%;
+  max-width: 1200px;
 }
 
 .contentWrapper {
@@ -39,14 +41,15 @@
   justify-content: center;
   align-items: center;
   gap: 0px;
-  padding: 16px 0px 0px 0px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .serviceWrapper {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  padding: 36px 0px 28px;
+  padding: 36px 0px 32px;
   width: 100%;
 }
 .displayTitle {
@@ -71,7 +74,6 @@
   font-size: 17px;
   line-height: 130%;
   width: 100%;
-  max-width: 450px;
   margin-top: 4px;
 }
 .fancyDivider {
@@ -110,7 +112,7 @@
 @media screen and (min-width: 550px) {
   .container {
     width: 100%;
-    padding: 16px 40px 32px 40px;
+    padding: 16px 40px 48px 40px;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -122,7 +124,6 @@
     z-index: 1;
   }
   .contentWrapper {
-    max-width: 455px;
   }
   .displayTitle,
   .displayTitleItalic {
@@ -131,17 +132,24 @@
   .displayTitleImageWrapper {
     height: 42px;
   }
+  .serviceWrapper .displayTitleImageWrapper {
+    transition: 200ms ease-in all;
+  }
+  .serviceWrapper:hover .displayTitleImageWrapper {
+    transition: 200ms ease-out all;
+    transform: translateX(4px);
+  }
 }
 @media screen and (min-width: 900px) {
-  .contentWrapper {
-    display: grid;
-    grid-template-columns: 1fr 10px 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 40px;
-    width: 100%;
-    gap: 40px;
-    margin: 32px 0px;
-    height: fit-content;
-    position: relative;
+  .serviceWrapper {
+    padding: 40px 0px 36px;
+  }
+  .displayTitleImageWrapper {
+    height: calc(((0.066 * (100vw - 80px)) * 0.97) - 14px);
+  }
+}
+@media screen and (min-width: 1112px) {
+  .displayTitleImageWrapper {
+    height: 52px;
   }
 }

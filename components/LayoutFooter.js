@@ -40,7 +40,7 @@ export default function LayoutFooter() {
           </Link>
           <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">Blog</p>
-            <p className={styles.linkSubtitle}>04</p>
+            <p className={styles.linkSubtitle}>Insights and advice I wrote.</p>
           </Link>
           <Link
             href={"/contact"}

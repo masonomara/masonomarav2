@@ -13,7 +13,7 @@ export default function HomepageServices() {
       <div className={styles.contentWrapper}>
         <Link className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className={styles.displayTitleItalic}>Websites</h4>
+            <h4 className="titleMedium italic">Websites</h4>
             <p className={styles.serviceDescrption}>
               From E-Commerce to custom-built solutions, with a focus on SEO and{" "}
             </p>
@@ -29,7 +29,7 @@ export default function HomepageServices() {
         <div className={styles.fancyDivider}>{""}</div>
         <Link className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className={styles.displayTitle}>Brand & Content</h4>
+            <h4 className="titleMedium">Brand & Content</h4>
             <p className={styles.serviceDescrption}>
               From E-Commerce to custom-built solutions, with a focus on SEO and{" "}
             </p>
@@ -41,7 +41,7 @@ export default function HomepageServices() {
         <div className={styles.fancyDivider}>{""}</div>
         <Link className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className={styles.displayTitleItalic}>Product Design</h4>
+            <h4 className="titleMedium italic">Product Design</h4>
             <p className={styles.serviceDescrption}>
               From E-Commerce to custom-built solutions, with a focus on SEO and{" "}
             </p>
