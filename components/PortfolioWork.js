@@ -80,6 +80,7 @@ export default function PortfolioWork({ project }) {
                   onClick={(e) => handleChildElementClick(e)}
                   className={`${styles.description} ${styles.descriptionLink}`}
                   href={"/portfolio/" + project.fields.slug}
+                  target={"_top"}
                 >
                   <span>
                     Read More

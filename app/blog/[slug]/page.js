@@ -2,8 +2,7 @@ import React from "react";
 import { createClient } from "contentful";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../../styles/ProjectPage.module.css";
-import ProjectPageHeader from "@/components/ProjectPageHeader";
+import styles from "../../../styles/BlogPage.module.css";
 import { ProjectContent } from "@/components/ProjectPageContent";
 
 const spaceId = process.env.CONTENTFUL_SPACE_ID;
@@ -16,24 +15,24 @@ export async function generateStaticParams() {
   });
 
   const { items } = await client.getEntries({
-    content_type: "clientList",
+    content_type: "bio",
   });
 
-  return items.map((project) => ({
+  return items.map((blog) => ({
     params: {
-      slug: project.fields.slug,
+      slug: blog.fields.slug,
     },
   }));
 }
 
-export async function getProject(slug) {
+export async function getBlog(slug) {
   const client = createClient({
     space: spaceId,
     accessToken: contentfulAccessKey,
   });
 
   const { items } = await client.getEntries({
-    content_type: "clientList",
+    content_type: "bio",
     "fields.slug": slug,
   });
 
@@ -44,13 +43,13 @@ export async function getProject(slug) {
   return items[0];
 }
 
-export default async function portfolioPage({ params }) {
+export default async function BlogPage({ params }) {
   const { slug } = params;
-  const project = await getProject(slug);
+  const blog = await getBlog(slug);
 
   return (
     <div className={styles.container}>
-      <Link className={styles.portfolioWrapper} href={"/portfolio"}>
+      <Link className={styles.portfolioWrapper} href={"/blog"}>
         <Image
           className={styles.portfolioArrow}
           alt={"arrow"}
@@ -58,21 +57,12 @@ export default async function portfolioPage({ params }) {
           width={16}
           height={16}
         />
-        <span className={styles.portfolioText}>Back to full portfolio</span>
+        <span className={styles.portfolioText}>Back to blog</span>
       </Link>
       <div className={styles.mainHeaderWrapper}>
-        <ProjectPageHeader project={project} />
-        <ProjectContent project={project} />
-        {/* <h1 className="titleMedium">{project.fields.title}</h1>
-        <div className={styles.imageWrapper}>
-          <Image
-            alt={project?.fields.title}
-            src={"https:" + project?.fields.coverImage.fields.file.url || null}
-            fill
-            sizes="50vw"
-            priority
-          />
-        </div> */}
+        <h2 className="titleBlogTitle">{blog?.fields.title || "blog Title"}</h2>
+        <div className={styles.fancyDivider}>{""}</div>
+        <ProjectContent project={blog} />
       </div>
     </div>
   );

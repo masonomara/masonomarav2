@@ -23,7 +23,7 @@ async function Portfolio() {
       <div className={styles.contentWrapper}>
         <h1 className="titlePageTitle">Portfolio</h1>
         <p className={styles.subtitle}>
-          A collection of projects I've worked on, including custom mobile and
+          A collection of selected projects I've worked on, including custom mobile and
           web applications to successful e-commerce solutions.
         </p>
       </div>

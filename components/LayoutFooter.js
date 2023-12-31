@@ -24,7 +24,7 @@ export default function LayoutFooter() {
             className={styles.linkWrapper}
           >
             <p className="titleTiny">Portfolio</p>
-            <p className={styles.linkSubtitle}>Projects I've worked on.</p>
+            <p className={styles.linkSubtitle}>Selected projects I've worked on.</p>
           </Link>
           <Link
             href={"/services"}
@@ -32,7 +32,7 @@ export default function LayoutFooter() {
             className={styles.linkWrapper}
           >
             <p className="titleTiny">Services</p>
-            <p className={styles.linkSubtitle}>Services I offer.</p>
+            <p className={styles.linkSubtitle}>Flexible and scalable solutions.</p>
           </Link>
           <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">About</p>

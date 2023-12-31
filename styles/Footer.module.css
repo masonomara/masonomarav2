@@ -135,6 +135,17 @@
     opacity: 0.75;
     transition: 100ms ease-out all;
   }
+  .linksWrapper {
+    width: 100%;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+    border-top: 2px solid var(--primary);
+    margin-top: 64px;
+    padding-top: 48px;
+  }
 }
 @media screen and (min-width: 900px) {
   .wrapper {

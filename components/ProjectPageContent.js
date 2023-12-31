@@ -33,16 +33,25 @@ export const ProjectContent = ({ project }) => {
   console.log(project);
   return (
     <div className={styles.richtext__container}>
-      <h4 className="titleSmall">{project.fields.subtitle}</h4>
+      {project.fields.coverImage ? (
+        <>
+          <h4 className="titleSmall">{project.fields.subtitle}</h4>
 
-      <div className={styles.imageWrapper__desktop}>
-        <Image
-          src={"https:" + project.fields.coverImage.fields.file.url}
-          alt={project.fields.title}
-          fill
-          priority
-        />
-      </div>
+          <div className={styles.imageWrapper__desktop}>
+            <Image
+              src={"https:" + project.fields.coverImage.fields.file.url}
+              alt={project.fields.title}
+              fill
+              priority
+            />
+          </div>
+        </>
+      ) : (
+        <>
+          <h4 className="titleBlogSmall">{project.fields.highlight1}</h4>
+        </>
+      )}
+
       {!project.fields.contentColumns === 1 ? (
         <div className={styles.content__wrapper}>
           {documentToReactComponents(project.fields.content, renderOptions)}

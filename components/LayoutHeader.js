@@ -85,7 +85,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Portfolio</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Projects I've worked on.
+                Selected projects I've worked on.
                 </span>
               </Link>
               <Link
@@ -95,7 +95,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Services</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Services I offer.
+                  Flexible and scalable solutions.
                 </span>
               </Link>
               <Link

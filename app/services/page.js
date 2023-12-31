@@ -13,11 +13,10 @@ export default function Services() {
       <div className={styles.contentWrapper}>
         <h2 className={styles.title}>Services</h2>
         <p className={styles.subtitle}>
-          Mason O’Mara has experience handling custom mobile and web
-          applications, e-commerce solutions, web design, branding, business
-          workflows, and product scalability.
+          Building flexible and scalable solutions across different platforms
+          and mediums. Looking for oppurtunities to apply creative branding.
         </p>
-        <p className={styles.header}>New Business & Inquiries</p>
+        {/* <p className={styles.header}>New Business & Inquiries</p>
         <Link
           href={"mailto:mason.omara@gamil.com"}
           target={"_blank"}
@@ -34,9 +33,9 @@ export default function Services() {
           className={styles.emailLink}
         >
           <p>1301 Corlies Ave, Neptune NJ Suite 2D</p>
-        </Link>
+        </Link>*/}
       </div>
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }
