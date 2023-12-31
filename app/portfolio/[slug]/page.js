@@ -2,6 +2,9 @@ import React from "react";
 import { createClient } from "contentful";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../../../styles/ProjectPage.module.css";
+import ProjectPageHeader from "@/components/ProjectPageHeader";
+import { ProjectContent } from "@/components/ProjectPageContent";
 
 const spaceId = process.env.CONTENTFUL_SPACE_ID;
 const contentfulAccessKey = process.env.CONTENTFUL_ACCESS_KEY;
@@ -46,12 +49,25 @@ export default async function portfolioPage({ params }) {
   const project = await getProject(slug);
 
   return (
-    <div>
-      <Link href={"/portfolio"}>
-        <span>Full portfolio</span>
-        <Image alt={"arrow"} src={"/arrowRed.png"} width={18} height={18} />
+    <div className={styles.container}>
+      <Link className={styles.portfolioWrapper} href={"/portfolio"}>
+        <Image className={styles.portfolioArrow} alt={"arrow"} src={"/arrowRedPoint.png"} width={16} height={16} />
+        <span className={styles.portfolioText}>Back to full portfolio</span>
       </Link>
-      <h1>{project.fields.title}</h1>
+      <div classname={styles.mainHeaderWrapper}>
+        <ProjectPageHeader project={project} />
+        <ProjectContent project={project} />
+        {/* <h1 className="titleMedium">{project.fields.title}</h1>
+        <div className={styles.imageWrapper}>
+          <Image
+            alt={project?.fields.title}
+            src={"https:" + project?.fields.coverImage.fields.file.url || null}
+            fill
+            sizes="50vw"
+            priority
+          />
+        </div> */}
+      </div>
     </div>
   );
 }

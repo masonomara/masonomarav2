@@ -71,6 +71,41 @@ export default function PortfolioWork({ project }) {
           <p className={styles.subtitle}>
             {project?.fields.subtitle || "Project Subtitle"}
           </p>
+          <div className={styles.infoWrapperDesktop}>
+            <div className={styles.descriptionWrapper}>
+              <p className={styles.descriptionheader}>Overview</p>
+              <span className={styles.description}>
+                {project?.fields.highlight1}&nbsp;
+                <Link
+                  onClick={(e) => handleChildElementClick(e)}
+                  className={`${styles.description} ${styles.descriptionLink}`}
+                  href={"/portfolio/" + project.fields.slug}
+                >
+                  <span>
+                    Read More
+                    <Image src={"/arrowSmall.png"} height={15} width={15} />
+                  </span>
+                </Link>
+              </span>
+            </div>
+            <div className={styles.descriptionWrapper}>
+              <p className={styles.descriptionheader}>Role</p>
+              <p className={styles.description}>{project?.fields.role}</p>
+            </div>
+
+            <div className={styles.descriptionWrapper}>
+              <p className={styles.descriptionheader}>Technology</p>
+              <p className={styles.description}>
+                {" "}
+                {project.fields.tech.map((tech, index) => (
+                  <React.Fragment key={index}>
+                    {tech}
+                    {index < project.fields.tech.length - 1 && ", "}
+                  </React.Fragment>
+                ))}
+              </p>
+            </div>
+          </div>
         </div>
         <div
           className={projectOpen ? styles.infoWrapperOpen : styles.infoWrapper}
@@ -132,7 +167,6 @@ export default function PortfolioWork({ project }) {
                     src={"https:" + image.fields.file.url}
                     alt={image.fields.title}
                     fill
-                    priority
                     style={{ objectFit: "cover" }}
                   />
                 </div>

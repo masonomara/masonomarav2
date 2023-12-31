@@ -1,0 +1,46 @@
+.portfolioWrapper {
+  font-weight: 500;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px; 
+  letter-spacing: -0.01em;
+  align-items: center;
+  width: fit-content;
+  margin-top: -14px;
+  transition: ease-in all 100ms;
+}
+.portfolioArrow {
+  transform: rotate(180deg);
+}
+.container {
+  padding: 24px 20px 0px;
+  width: 100%;
+  max-width: 1280px;
+
+}
+.mainHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.mainHeaderWrapper * {
+  color: var(--primary)!important;
+  text-shadow: none;
+}
+.imageWrapper {
+  width: flex;
+  aspect-ratio: 4/5;
+  position: relative;
+}
+
+@media screen and (min-width: 550px) {
+  .portfolioWrapper:hover {
+    opacity: .6;
+    transition: ease-out all 100ms;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

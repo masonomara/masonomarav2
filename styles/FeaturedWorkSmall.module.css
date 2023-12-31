@@ -11,7 +11,7 @@
   width: calc((100% / 2) - 10px);
   text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
     0px 0px 24px rgba(175, 25, 16, 1);
-    text-align: center;
+  text-align: center;
 }
 .imageWrapper {
   aspect-ratio: 4/5;
@@ -21,10 +21,6 @@
   position: relative;
 }
 
-.wrapper:hover .imageWrapper {
-  transform: rotate(3.5deg);
-  transition: 200ms ease-out all;
-}
 .subtitle {
   text-align: center;
   font-size: 15px;
@@ -40,11 +36,14 @@
   flex-direction: column;
 }
 
-
 @media screen and (min-width: 550px) {
   .title {
     font-size: 87px;
     text-align: center;
+  }
+  .wrapper:hover .imageWrapper {
+    transform: rotate(3.5deg);
+    transition: 200ms ease-out all;
   }
 }
 

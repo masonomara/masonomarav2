@@ -218,6 +218,13 @@ option:disabled {
   font-size: calc(0.075 * (100vw - 40px));
   line-height: 97%;
 }
+.titlePageTitle {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 97%;
+  font-size: calc(0.19 * (100vw - 40px));
+}
 @media screen and (min-width: 550px) {
   .titleDisplay {
     font-size: 89.3px;
@@ -234,6 +241,9 @@ option:disabled {
   .titleTiny {
     font-size: 35.25px;
   }
+  .titlePageTitle {
+    font-size: 97px;
+  }
 }
 @media screen and (min-width: 900px) {
   .titleDisplay {
@@ -248,6 +258,9 @@ option:disabled {
   }
   .titleTiny {
     font-size: calc(0.044 * (100vw - 80px));
+  }
+  .titlePageTitle {
+    font-size: 97px;
   }
 }
 @media screen and (min-width: 1280px) {

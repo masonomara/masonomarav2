@@ -23,10 +23,6 @@
   height: calc(100% - 84px);
 }
 
-.wrapper:hover .imageWrapper {
-  transform: rotate(3.5deg);
-  transition: 200ms ease-out all;
-}
 .title {
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
@@ -68,6 +64,18 @@
   }
   .wrapper {
     max-width: 455px;
+  }
+  .readMore {
+    opacity: 1;
+    transition: 100ms ease-in all;
+  }
+  .readMore:hover {
+    opacity: 0.6;
+    transition: 100ms ease-out all;
+  }
+  .wrapper:hover .imageWrapper {
+    transform: rotate(3.5deg);
+    transition: 200ms ease-out all;
   }
 }
 

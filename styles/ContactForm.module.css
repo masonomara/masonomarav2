@@ -220,11 +220,20 @@
     background-color: var(--primary);
     transition: 100ms ease-out all;
   }
-
   .button:hover .buttonText {
     color: var(--background) !important;
     transition: 100ms ease-out all;
   }
+
+  .emailLink {
+    opacity: 1;
+    transition: 100ms ease-in all;
+  }
+  .emailLink:hover {
+    opacity: 0.6;
+    transition: 100ms ease-out all;
+  }
+
   .buttonInactive:hover {
     background-color: var(--background) !important;
 
