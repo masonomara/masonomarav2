@@ -92,6 +92,13 @@
     transform: rotate(3.5deg);
     transition: 200ms ease-out all;
   }
+  .descriptionLink {
+    transition: 100ms ease-in all;
+  }
+  .descriptionLink:hover {
+    opacity: .6;
+    transition: 100ms ease-out all;
+  }
 }
 
 @media screen and (min-width: 900px) {

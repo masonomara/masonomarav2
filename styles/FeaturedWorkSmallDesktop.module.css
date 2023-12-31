@@ -1,0 +1,97 @@
+.wrapper {
+  color: var(--background);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+}
+.imageWrapper {
+  aspect-ratio: 4/5;
+  width: 60%;
+  width: auto;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  /* z-index: 1; */
+  transition: 200ms ease-in all;
+  min-height: 227px;
+  height: calc(100% - 100px);
+}
+
+.title {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  text-align: left;
+  width: 100%;
+  line-height: 97%;
+  font-size: calc(0.171 * (100vw - 40px));
+}
+.subtitle {
+  text-align: left;
+  margin-bottom: 23px;
+  font-size: 17px;
+  line-height: 130%;
+  width: 75%;
+  margin-top: 4px;
+  width: 50%;
+  min-width: 150px;
+}
+.content {
+  width: 100%;
+  margin-bottom: 80px;
+  z-index: 1;
+  text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
+    0px 0px 24px rgba(175, 25, 16, 1);
+}
+.readMore {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 19px;
+}
+.readMore img {
+  margin-bottom: -3.5px;
+}
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 87px;
+    text-align: left;
+  }
+  .wrapper {
+    max-width: 455px;
+  }
+  .readMore {
+    opacity: 1;
+    transition: 100ms ease-in all;
+  }
+  .readMore:hover {
+    opacity: 0.6;
+    transition: 100ms ease-out all;
+  }
+  .wrapper:hover .imageWrapper {
+    transform: rotate(3.5deg);
+    transition: 200ms ease-out all;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .content h2 {
+    font-size: calc(0.171 * (33vw - 80px))!important;
+    text-align: left;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .content h2 {
+    font-size: 59px!important;
+    text-align: left;
+  }
+
+}

@@ -236,7 +236,7 @@ option:disabled {
     font-size: 53.58px;
   }
   .titleSmall {
-    font-size: 51.23px;
+    font-size: 50.23px;
   }
   .titleTiny {
     font-size: 35.25px;
@@ -281,4 +281,20 @@ option:disabled {
 .italic {
   font-family: "EditorialItalic" !important;
   font-style: italic !important;
+}
+
+.mobile {
+  display: flex;
+}
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    min-width: 0px;
+  }
 }

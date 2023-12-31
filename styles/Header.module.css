@@ -253,6 +253,28 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+  .menuButton,
+  .titleWrapper,
+  .menuOpen {
+    transition: 200ms ease-in all;
+    opacity: 1;
+  }
+  .menuButton:hover,
+  .titleWrapper:hover,
+  .menuOpen:hover {
+    transition: 200ms ease-out all;
+    opacity: 0.6;
+  }
+
+  .fullMenuItem {
+    transition: 200ms ease-in all;
+    opacity: 1;
+  }
+
+  .fullMenuItem:hover {
+    transition: 200ms ease-out all;
+    opacity: 0.75;
+  }
 }
 @media screen and (min-width: 900px) {
   .container {

@@ -201,6 +201,14 @@
   .titleWrapper {
     padding-top: 8px;
   }
+  .descriptionLink {
+    transition: 200ms ease-in all;
+    opacity: 1;
+  }
+  .descriptionLink:hover {
+    transition: 200ms ease-out all;
+    opacity: 0.6;
+  }
 }
 
 @media screen and (min-width: 750px) {

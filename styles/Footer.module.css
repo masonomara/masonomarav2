@@ -111,6 +111,30 @@
     justify-content: center;
     align-items: center;
   }
+  .emailLink {
+    transition: 100ms ease-in all;
+  }
+  .emailLink:hover {
+    opacity: 0.6;
+
+    transition: 100ms ease-out all;
+  }
+  .fullMenuItem {
+    transition: 200ms ease-in all;
+    opacity: 1;
+  }
+
+  .fullMenuItem:hover {
+    transition: 200ms ease-out all;
+    opacity: 0.75;
+  }
+  .linkWrapper {
+    transition: 100ms ease-in all;
+  }
+  .linkWrapper:hover {
+    opacity: 0.75;
+    transition: 100ms ease-out all;
+  }
 }
 @media screen and (min-width: 900px) {
   .wrapper {

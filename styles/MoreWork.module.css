@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  max-width: 1200px;
 }
 .title {
   font-size: 18px;
@@ -41,6 +42,7 @@
   height: 2px;
   background: var(--background);
   width: 100%;
+  max-width: 1200px;
 }
 .fancyDivider {
   background-image: url("/star.png");
@@ -51,9 +53,12 @@
   width: 100%;
 }
 .smallWorksWrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+.featuredWorksWrapperTablet {
+  display: none;
 }
 .button {
   border: 2px solid var(--background);
@@ -80,6 +85,22 @@
   margin: 24px 0px 32px;
 }
 @media screen and (min-width: 550px) {
+  .featuredWorksWrapperMobile {
+    display: none;
+  }
+  .featuredWorksWrapperDesktop {
+    display: none;
+  }
+  .featuredWorksWrapperTablet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .smallWorksWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
   .container {
     width: 100%;
     padding: 16px 40px 32px 40px;
@@ -98,10 +119,14 @@
   .featuredWorksWrapperMobile {
     display: none;
   }
+  .featuredWorksWrapperTablet {
+    display: none;
+  }
   .featuredWorksWrapperDesktop {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1200px;
   }
   .featuredWorksWrapper {
     display: grid;
@@ -114,13 +139,5 @@
     height: fit-content;
     position: relative;
   }
-  .fancyDivider {
-    background-image: url("/starHorizontal.png");
-    background-repeat: no-repeat repeat;
-    background-position: top center;
-    background-size: 10px 14px;
-    height: 100%;
-    width: 10px;
-    position: relative;
-  }
+
 }
