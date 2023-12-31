@@ -6,23 +6,11 @@ export default function ProjectPageHeader({ project }) {
   return (
     <>
       <div className={styles.mainWrapper}>
-        <h2 className="titlePageTitle">
-          {project?.fields.title || "Project Title"}
-        </h2>
-        <p className={styles.subtitle}>{project?.fields.highlight1}</p>
-        <div className={styles.content}>
-          <div className={styles.imageWrapper}>
-            <Image
-              alt={project?.fields.title}
-              src={
-                "https:" + project?.fields.coverImage.fields.file.url || null
-              }
-              fill
-              sizes="50vw"
-              priority
-            />
-          </div>
-          <div className={styles.fancyDivider}>{""}</div>
+        <div>
+          <h2 className="titlePageTitle">
+            {project?.fields.title || "Project Title"}
+          </h2>
+          <p className={styles.subtitle}>{project?.fields.highlight1}</p>
           <div className={styles.infoWrapper}>
             <div className={styles.descriptionWrapper}>
               <p className={styles.descriptionheader}>Role</p>
@@ -59,25 +47,25 @@ export default function ProjectPageHeader({ project }) {
                 </Link>
               </span>
             </div>
-
-            {/* <div className={styles.photoGalleryWrapper}>
-      <div className={styles.photoGallery}>
-        {project.fields.imageGallery?.slice(0, 3).map((image, index) => (
-          <div key={image.sys.id} className={styles.photo}>
-            <Image
-              src={"https:" + image.fields.file.url}
-              alt={image.fields.title}
-              fill
-              priority
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-        )) || <div>{""}</div>}
-      </div>
-    </div> */}
           </div>
         </div>
+
+        <div className={styles.content}>
+          <div className={styles.imageWrapper}>
+            <Image
+              alt={project?.fields.title}
+              src={
+                "https:" + project?.fields.coverImage.fields.file.url || null
+              }
+              fill
+              sizes="50vw"
+              priority
+            />
+          </div>
+          <div className={styles.fancyDividerMobile}>{""}</div>
+        </div>
       </div>
+      <div className={styles.fancyDividerDesktop}>{""}</div>
     </>
   );
 }

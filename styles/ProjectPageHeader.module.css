@@ -7,7 +7,7 @@
   position: relative;
   justify-content: space-between;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   text-shadow: 0px 0px 8px rgba(255, 246, 237, 1),
     0px 0px 24px rgba(255, 246, 237, 1);
 }
@@ -17,6 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 0px;
+
 }
 .infoWrapper {
   transition: 200ms ease all;
@@ -29,7 +31,6 @@
   gap: 23px;
   z-index: 1;
   width: 100%;
-  margin-top: 32px;
 }
 .imageWrapper {
   aspect-ratio: 4/5;
@@ -37,15 +38,19 @@
   width: calc(66vw - 40px);
   min-width: 0px;
   transition: 200ms ease-in all;
-  margin-bottom: 32px;
+  margin: 20px 0px;
+  max-width: 400px;
 }
-.fancyDivider {
+.fancyDividerMobile {
   background-image: url("/starRed.png");
   background-repeat: repeat no-repeat;
   background-position: center left;
   background-size: 14px 9px;
   height: 9px;
   width: 100%;
+}
+.fancyDividerDesktop {
+  display: none;
 }
 .title {
   font-family: "EditorialRegular" !important;
@@ -132,35 +137,29 @@
   vertical-align: bottom;
   white-space: nowrap;
 }
-.descriptionLink img {
-  margin-bottom: -2.5px;
-}
-.photoGalleryWrapper {
-  width: 100%;
-  grid-column: span 2;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-top: 8px;
-  position: relative;
-  height: 200px;
-  border-radius: 8px;
-}
-.photoGalleryWrapper::-webkit-scrollbar {
-  display: none;
-}
-.photoGallery {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  width: fit-content;
-  height: 200px;
-}
-.photo {
-  height: 200px;
-  width: 300px;
-  position: relative;
-  pointer-events: none;
-}
-.infoWrapperDesktop {
-  display: none;
+
+@media screen and (min-width: 750px) {
+  .mainWrapper {
+    display: grid;
+    padding-top: 48px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+  .fancyDividerMobile {
+    display: none;
+  }
+  .fancyDividerDesktop {
+    background-image: url("/starRed.png");
+    background-repeat: repeat no-repeat;
+    background-position: center left;
+    background-size: 14px 9px;
+    height: 9px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 48px;
+  }
+  .imageWrapper {
+    width: 100%;
+    margin: 0px;
+  }
 }

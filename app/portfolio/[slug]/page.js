@@ -54,7 +54,7 @@ export default async function portfolioPage({ params }) {
         <Image className={styles.portfolioArrow} alt={"arrow"} src={"/arrowRedPoint.png"} width={16} height={16} />
         <span className={styles.portfolioText}>Back to full portfolio</span>
       </Link>
-      <div classname={styles.mainHeaderWrapper}>
+      <div className={styles.mainHeaderWrapper}>
         <ProjectPageHeader project={project} />
         <ProjectContent project={project} />
         {/* <h1 className="titleMedium">{project.fields.title}</h1>
