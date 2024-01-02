@@ -32,7 +32,7 @@ export default function HomepageHero() {
             src={"/headshot.png"}
             priority
             fill
-            alt={"Mason's Headshot"}
+            alt={"Mason’s Headshot"}
             sizes="50vw"
           />
         </div>

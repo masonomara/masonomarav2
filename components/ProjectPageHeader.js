@@ -42,6 +42,7 @@ export default function ProjectPageHeader({ project }) {
                       src={"/arrowRedExternal.png"}
                       height={15}
                       width={15}
+                      alt={"arrow"}
                     />
                   </span>
                 </Link>

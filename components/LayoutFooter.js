@@ -26,7 +26,7 @@ export default function LayoutFooter() {
           >
             <p className="titleTiny">Portfolio</p>
             <p className={styles.linkSubtitle}>
-              Selected projects I've worked on.
+              Selected projects I’ve worked on.
             </p>
           </Link>
           <Link
@@ -88,7 +88,7 @@ export default function LayoutFooter() {
         <AnimatedImage
           src={"/hat.png"}
           fill={true}
-          alt={"Mason's Hat"}
+          alt={"Mason’s Hat"}
           sizes="50vw"
         />
       </div>

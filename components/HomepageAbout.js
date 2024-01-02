@@ -19,7 +19,7 @@ export default function HomepageAbout() {
           <Image
             src={"/hat.png"}
             fill
-            alt={"Mason's Hat"}
+            alt={"Mason’s Hat"}
             sizes="50vw"
             priority
           />

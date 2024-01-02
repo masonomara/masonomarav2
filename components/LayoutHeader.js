@@ -71,7 +71,7 @@ export default function LayoutHeader() {
                   target={"_top"}
                   className={styles.titleWrapper}
                 >
-                  <p className={styles.headerTitle}>Mason O'Mara</p>
+                  <p className={styles.headerTitle}>Mason O’Mara</p>
                 </Link>
 
                 <div className={styles.menuOpen} onClick={handleMenu}>
@@ -85,7 +85,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Portfolio</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Selected projects I've worked on.
+                  Selected projects I’ve worked on.
                 </span>
               </Link>
               <Link
@@ -134,7 +134,7 @@ export default function LayoutHeader() {
 
         <div className={styles.wrapper}>
           <Link href={"/"} target={"_top"} className={styles.titleWrapper}>
-            <p className={styles.headerTitle}>Mason O'Mara</p>
+            <p className={styles.headerTitle}>Mason O’Mara</p>
           </Link>
 
           <div className={styles.menuOpen} onClick={handleMenu}>

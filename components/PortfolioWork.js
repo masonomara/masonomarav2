@@ -84,7 +84,12 @@ export default function PortfolioWork({ project }) {
                 >
                   <span>
                     Read More
-                    <Image src={"/arrowSmall.png"} height={15} width={15} />
+                    <Image
+                      src={"/arrowSmall.png"}
+                      height={15}
+                      width={15}
+                      alt={"arrow"}
+                    />
                   </span>
                 </Link>
               </span>
@@ -122,7 +127,12 @@ export default function PortfolioWork({ project }) {
               >
                 <span>
                   Read More
-                  <Image src={"/arrowSmall.png"} height={15} width={15} />
+                  <Image
+                    src={"/arrowSmall.png"}
+                    height={15}
+                    width={15}
+                    alt={"arrow"}
+                  />
                 </span>
               </Link>
             </span>
@@ -154,7 +164,12 @@ export default function PortfolioWork({ project }) {
               >
                 <span>
                   {project.fields.url}&nbsp;
-                  <Image src={"/arrowExternal.png"} height={15} width={15} />
+                  <Image
+                    src={"/arrowExternal.png"}
+                    height={15}
+                    width={15}
+                    alt={"arrow"}
+                  />
                 </span>
               </Link>
             </span>

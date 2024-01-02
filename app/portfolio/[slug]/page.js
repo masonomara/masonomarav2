@@ -63,16 +63,7 @@ export default async function portfolioPage({ params }) {
       <div className={styles.mainHeaderWrapper}>
         <ProjectPageHeader project={project} />
         <ProjectContent project={project} />
-        {/* <h1 className="titleMedium">{project.fields.title}</h1>
-        <div className={styles.imageWrapper}>
-          <Image
-            alt={project?.fields.title}
-            src={"https:" + project?.fields.coverImage.fields.file.url || null}
-            fill
-            sizes="50vw"
-            priority
-          />
-        </div> */}
+
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export default function Services() {
               E-Commerce Solutions • Custom Websites & Interfaces • SEO Strategy
             </p>
             <p className={styles.servicesWrapperDescription}>
-              Improve your businesses's online presence with a unique and
+              Improve your businesses’s online presence with a unique and
               scalable website tailored to your goals, complete with an
               effective SEO strategy.
             </p>

@@ -19,7 +19,7 @@ export default function HomepageServices() {
               Technical & Content SEO
             </p>
             <p className={styles.serviceDescription}>
-              Improve your businesses's online presence with a unique and
+              Improve your businesses’s online presence with a unique and
               scalable website tailored to your goals, complete with an
               effective SEO strategy.
             </p>

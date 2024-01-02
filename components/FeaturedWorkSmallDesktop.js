@@ -15,7 +15,7 @@ export default function FeaturedWorkSmallDesktop({ project }) {
         </p>
         <span className={styles.readMore}>
           Read More
-          <Image src={"/arrowSmall.png"} height={19} width={19} />
+          <Image src={"/arrowSmall.png"} height={19} width={19} alt={"arrow"} />
         </span>
       </div>
       <div className={styles.imageWrapper}>
