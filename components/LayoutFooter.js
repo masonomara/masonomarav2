@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
+import AnimatedImage from "./AnimatedImage";
 
 export default function LayoutFooter() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,7 +41,9 @@ export default function LayoutFooter() {
           </Link>
           <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">About</p>
-            <p className={styles.linkSubtitle}>Establishing digital presences. </p>
+            <p className={styles.linkSubtitle}>
+              Establishing digital presences.{" "}
+            </p>
           </Link>
           <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">Blog</p>
@@ -72,7 +75,7 @@ export default function LayoutFooter() {
               .
             </span>
             <span className={styles.subtitle}>
-              Currently based in Neptune, NJ.
+              Currently based in Asbury Park, NJ.
             </span>
             <span className={styles.subtitle}>
               Focuses include websites, branding, apps, e-commerce, and product
@@ -80,6 +83,14 @@ export default function LayoutFooter() {
             </span>
           </div>
         </div>
+      </div>
+      <div className={styles.imageWrapper}>
+        <AnimatedImage
+          src={"/hat.png"}
+          fill={true}
+          alt={"Mason's Hat"}
+          sizes="50vw"
+        />
       </div>
     </div>
   );

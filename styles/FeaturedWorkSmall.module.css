@@ -51,7 +51,7 @@
     text-align: center;
   }
   .wrapper:hover .imageWrapper {
-    transform: rotate(3.5deg);
+    transform: rotate(3deg);
     transition: 200ms ease-out all;
   }
   .readMore {

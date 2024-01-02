@@ -16,7 +16,13 @@ export default function HomepageAbout() {
           Development
         </h4>
         <div className={styles.imageWrapper}>
-          <Image src={"/hat.png"} fill alt={"Mason's Hat"} sizes="50vw" />
+          <Image
+            src={"/hat.png"}
+            fill
+            alt={"Mason's Hat"}
+            sizes="50vw"
+            priority
+          />
         </div>
         <h4 className={styles.titleDisplay}>
           And&nbsp;

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/AboutMason.module.css";
-import Image from "next/image";
+
 
 export const metadata = {
   title: "About",
@@ -63,9 +63,6 @@ export default function About() {
             </a>{" "}
             I’m currently based in and enjoying Asbury Park, New Jersey.
           </p>
-        </div>
-        <div className={styles.imageWrapper}>
-          <Image src={"/hat.png"} fill alt={"Mason's Hat"} sizes="50vw" />
         </div>
       </div>
     </div>

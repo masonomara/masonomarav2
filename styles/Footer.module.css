@@ -1,12 +1,13 @@
 .container {
   background: var(--background);
   width: 100%;
-  top: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 100;
   height: fit-content;
+  overflow: hidden;
 }
 .wrapper {
   max-width: 1280px;
@@ -57,6 +58,9 @@
 }
 .footerBottom {
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
@@ -188,5 +192,25 @@
     background-color: var(--primary);
     color: var(--background);
     transition: 100ms ease-out all;
+  }
+}
+
+.imageWrapper {
+  width: 120px;
+  justify-self: center;
+  aspect-ratio: 1080/876;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.imageWrapper img {
+  transform: rotate(340deg) scaleX(-1);
+}
+@media screen and (min-width: 900px) {
+  .imageWrapper {
+    display: none;
+  }
+  .imageWrapper img {
+    transform: rotate(340deg) scaleX(-1);
   }
 }

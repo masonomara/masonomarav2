@@ -22,7 +22,13 @@
   min-height: 227px;
   height: calc(100% - 84px);
 }
-
+.titleLarge {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.171 * (100vw - 40px));
+  line-height: 97%;
+}
 .title {
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
@@ -58,12 +64,41 @@
   margin-bottom: -3.5px;
 }
 @media screen and (min-width: 550px) {
+  .titleLarge {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    font-size: calc(0.171 * (100vw - 80px));
+    line-height: 97%;
+  }
+  .wrapper {
+    padding-top: 0px;
+    margin-top: 48px;
+    padding-bottom: 0px;
+    margin-bottom: 32px;
+  }
+  .content {
+    width: calc(100% - 5vw);
+    margin-bottom: 80px;
+    z-index: 1;
+    text-shadow: 0px 0px 8px rgba(175, 25, 16, 1),
+      0px 0px 24px rgba(175, 25, 16, 1);
+  }
   .title {
     font-size: 87px;
     text-align: left;
   }
-  .wrapper {
-    max-width: 455px;
+  .imageWrapper {
+    aspect-ratio: 4/5;
+    width: 60%;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    /* z-index: 1; */
+    transition: 200ms ease-in all;
+    min-height: 227px;
+    height: calc(100%);
   }
   .readMore {
     opacity: 1;
@@ -74,7 +109,7 @@
     transition: 100ms ease-out all;
   }
   .wrapper:hover .imageWrapper {
-    transform: rotate(3.5deg);
+    transform: rotate(3deg);
     transition: 200ms ease-out all;
   }
 }
@@ -85,6 +120,10 @@
     text-align: left;
   }
   .wrapper {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    margin-top: 0px;
     color: var(--background);
     display: flex;
     flex-direction: row;
@@ -95,5 +134,10 @@
     padding-top: 16px;
     padding-bottom: 16px;
     margin-bottom: -8px;
+    min-height: 100%;
+  }
+  .imageWrapper {
+    height: calc(100% - 42px);
+    margin-right: 16px;
   }
 }

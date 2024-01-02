@@ -106,24 +106,3 @@
     height: flex;
   }
 }
-
-.imageWrapper {
-  width: 214px;
-
-  aspect-ratio: 1080/876;
-  position: relative;
-  margin-top: 56px;
-}
-.imageWrapper img {
-  transform: rotate(322deg) scaleX(-1);
-}
-@media screen and (min-width: 550px) {
-  .imageWrapper {
-    width: 214px;
-  }
-}
-@media screen and (min-width: 900px) {
-  .imageWrapper {
-    width: 261px;
-  }
-}
