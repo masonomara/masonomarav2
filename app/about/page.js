@@ -1,7 +1,6 @@
-import ContactForm from "@/components/ContactForm";
-import Link from "next/link";
 import React from "react";
-import styles from "../../styles/ContactForm.module.css";
+import styles from "../../styles/AboutMason.module.css";
+import Image from "next/image";
 
 export const metadata = {
   title: "About",
@@ -11,32 +10,64 @@ export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.contentWrapper}>
-        <h2 className={styles.title}>About</h2>
-        <p className={styles.subtitle}>
-          Mason O’Mara has experience handling custom mobile and web
-          applications, e-commerce solutions, web design, branding, business
-          workflows, and product scalability.
-        </p>
-        <p className={styles.header}>New Business & Inquiries</p>
-        <Link
-          href={"mailto:mason.omara@gamil.com"}
-          target={"_blank"}
-          className={styles.emailLink}
-        >
-          <p>mason.omara@gmail.com</p>
-        </Link>
-        <p className={styles.header}>Office Location</p>
-        <Link
-          href={
-            "https://www.google.com/maps/dir/40.2098801,-74.0242841/Current+Media+Company,+1301+Corlies+Ave+Suite+2D,+Neptune+City,+NJ+07712/@40.2099178,-74.0267435,17z/data=!3m1!4b1!4m18!1m7!3m6!1s0x2aaba72f78ae592f:0x471c3c6409d7ff16!2sCurrent+Media+Company!8m2!3d40.2100309!4d-74.0240908!16s%2Fg%2F11p09n7wjt!4m9!1m1!4e1!1m5!1m1!1s0x2aaba72f78ae592f:0x471c3c6409d7ff16!2m2!1d-74.0240908!2d40.2100309!3e0?entry=ttu"
-          }
-          target={"_blank"}
-          className={styles.emailLink}
-        >
-          <p>1301 Corlies Ave, Neptune NJ Suite 2D</p>
-        </Link>
+        <h2 className="titlePageTitle">About</h2>
+        <div className={styles.fancyDivider}>{""}</div>
+        <div className={styles.richtext__container}>
+          <h3 className="titleBlogSmall">About Me</h3>
+          <p>
+            Hi! I’m Mason O’Mara. I’m currently operating as Technical Projects
+            Manager at Current Media Company. I help business establish their
+            digital presence helping with websites development, branding, and
+            product design. I also have a knack setting up successful events
+            every once in a while.
+          </p>
+
+          <h3 className="titleBlogSmall italic">How I Got Here</h3>
+          <p>
+            If you found my website by searching my name, you might have noticed
+            I used to play Division 1 Baseball at George Mason University. While
+            pursuing my first love, I also enjoyed studying economics and earned
+            a Bachelors degree in the subject. My initial job search in finance
+            was disrupted during COVID, so I began freelancing, taking on
+            projects involving website development and various digital content
+            tasks, alongside a few other odd jobs.
+          </p>
+          <p>
+            The more opportunities I had developing online businesses presences,
+            seeing tangible results, and delving deeper into coding—a hobby
+            turned serious—the more I fell in love with building up digital
+            products. I began studying user-focused design and pouring over
+            documentation for new technologies, and a new passion was born.
+          </p>
+          <h3 className="titleBlogSmall">
+            Scalability, Creativity, and Transparency
+          </h3>
+          <p>
+            A consistent theme in my work is clear and effective communication
+            with clients. I strive to fully understanding their needs before
+            working with them on a project making certain it aligns with their
+            future brand or project plans. This is complimented by never shying
+            away from a chance to infuse creative elements, utilize a new
+            technology, and a commitment to being transparent and guiding
+            clients in the right direction.
+          </p>
+          <h3 className="titleBlogSmall italic">Get in Touch</h3>
+          <p>
+            For new business inquiries, please fill in{" "}
+            <a target={"_blank"} href={"/contact"}>
+              this form
+            </a>
+            . Feel free to reach me at my email here:{" "}
+            <a target={"_blank"} href={"mailto:mason.omara@gmail.com"}>
+              mason.omara@gmail.com.
+            </a>{" "}
+            I’m currently based in and enjoying Asbury Park, New Jersey.
+          </p>
+        </div>
+        <div className={styles.imageWrapper}>
+          <Image src={"/hat.png"} fill alt={"Mason's Hat"} sizes="50vw" />
+        </div>
       </div>
-      <ContactForm />
     </div>
   );
 }

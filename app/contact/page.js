@@ -13,14 +13,14 @@ export default function Contact() {
       <div className={styles.contentWrapper}>
         <h1 className={styles.title}>Contact</h1>
         <p className={styles.subtitle}>
-          Experience in building custom mobile and web applications, e-commerce
+          Excited for oppurtunities building custom mobile and web applications, e-commerce
           solutions, web design, branding, business workflows, and product
           scalability.
         </p>
         <p className={styles.header}>New Business & Inquiries</p>
         <Link
           href={"mailto:mason.omara@gamil.com"}
-          target={"_blank"}
+          target={"_blank"}ƒ
           className={styles.emailLink}
         >
           <p>mason.omara@gmail.com</p>

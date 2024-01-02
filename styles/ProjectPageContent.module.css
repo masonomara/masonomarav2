@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 8px;
   height: fit-content;
 }
 .content__wrapper p {
@@ -81,9 +81,27 @@
 }
 .content__image__wrapper {
   position: relative;
-  width: 100%;
-  padding-top: 66.67%;
+  width: calc((100% - 8px) / 2);
+  aspect-ratio: 3/2;
   overflow: hidden;
-  margin: 8px 10px;
   background: white;
+  margin: 12px 0px;
+}
+.content__image__wrapper img {
+  width: 100% !important;
+  height: auto !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+@media screen and (max-width: 500px) {
+  .content__image__wrapper + .content__image__wrapper {
+    width: calc(100%);
+    margin-top: -8px;
+  }
+  .content__image__wrapper {
+    width: calc(100%);
+  }
 }
