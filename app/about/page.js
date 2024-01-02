@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../../styles/AboutMason.module.css";
 
-
 export const metadata = {
-  title: "About",
+  title: "Abouts",
 };
 
 export default function About() {
