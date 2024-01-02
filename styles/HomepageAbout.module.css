@@ -5,20 +5,13 @@
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
   margin-top: -16px;
   z-index: 1;
   position: relative;
-}
-.titleWrapper {
-  width: 100%;
-  height: 53px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 .title {
   font-size: 18px;
@@ -27,10 +20,20 @@
   color: var(--primary);
   text-transform: uppercase;
 }
+.titleWrapper {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+
 .divider {
   height: 2px;
   background: var(--primary);
   width: 100%;
+  max-width: 1200px;
 }
 .contentWrapper {
   display: flex;
@@ -40,6 +43,8 @@
   text-align: center;
   gap: 12px;
   padding: 48px 0px 16px 0px;
+  max-width: 1200px;
+  width: calc(100% * (3 / 4));
 }
 .displayTitle {
   text-align: center;
@@ -58,11 +63,7 @@
   letter-spacing: -0.025em !important;
   font-size: calc(0.19 * (100vw - 40px));
 }
-.imageWrapper {
-  width: calc(66vw - 40px);
-  aspect-ratio: 1080/876;
-  position: relative;
-}
+
 .subtitle {
   text-align: center;
   font-size: 17px;
@@ -71,7 +72,26 @@
   max-width: 310px;
   margin-top: 4px;
 }
-
+.titleDisplay {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.19 * (100vw - 40px));
+  line-height: 97%;
+}
+.titleDisplayItalic {
+  font-family: "EditorialItalic" !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  font-size: calc(0.19 * (100vw - 40px));
+  line-height: 97%;
+}
+.imageWrapper {
+  width: calc(66vw - 40px);
+  aspect-ratio: 1080/876;
+  position: relative;
+}
 @media screen and (min-width: 550px) {
   .container {
     width: 100%;
@@ -86,9 +106,44 @@
     margin-top: -16px;
     z-index: 1;
   }
+  .contentWrapper {
+    gap: 14px;
+  }
+  .titleDisplay {
+    font-size: 89.3px;
+  }
+  .titleDisplayItalic {
+    font-size: 89.3px;
+  }
   .imageWrapper {
     width: 283px;
   }
 }
+@media screen and (min-width: 750px) {
+  .titleDisplay {
+    font-size: calc(0.142 * (100vw - 80px));
+  }
+  .titleDisplayItalic {
+    font-size: calc(0.142 * (100vw - 80px));
+  }
+  .imageWrapper {
+    width: calc(0.421 * (100vw - 80px));
+  }
+  .contentWrapper {
+    gap: 16px;
+  }
+}
 @media screen and (min-width: 900px) {
+  .titleDisplay {
+    font-size: 116px;
+  }
+  .titleDisplayItalic {
+    font-size: 116px;
+  }
+  .imageWrapper {
+    width: 345px;
+  }
+  .contentWrapper {
+    gap: 18px;
+  }
 }

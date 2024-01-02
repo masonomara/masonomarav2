@@ -10,7 +10,7 @@ export default function HomepageAbout() {
       </div>
       <div className={styles.divider}>{""}</div>
       <div className={styles.contentWrapper}>
-        <h4 className="titleDisplay">
+        <h4 className={styles.titleDisplay}>
           Technical
           <br />
           Development
@@ -18,9 +18,9 @@ export default function HomepageAbout() {
         <div className={styles.imageWrapper}>
           <Image src={"/hat.png"} fill alt={"Mason's Hat"} sizes="50vw" />
         </div>
-        <h4 className="titleDisplay">
+        <h4 className={styles.titleDisplay}>
           And&nbsp;
-          <span className="titleDisplay italic">Design</span>
+          <span className={styles.titleDisplayItalic}>Design</span>
         </h4>
         <p className={styles.subtitle}>
           Freelance <strong>DEVELOPER</strong> and{" "}
