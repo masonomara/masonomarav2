@@ -1,6 +1,3 @@
-
-
-
 import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import LayoutHeader from "../components/LayoutHeader";
@@ -18,7 +15,16 @@ export const metadata = {
     icon: "favicon.ico",
   },
   description:
-    "Mason O’Mara is a technical developer and creative designer building intuitive and engaging products with a focus on business objectives and user experience.",
+    "Technical developer and creative designer building intuitive and engaging products with a focus on business objectives and user experience.",
+  openGraph: {
+    description:
+      "Technical developer and creative designer building intuitive and engaging products with a focus on business objectives and user experience.",
+    images: [
+      {
+        url: "/grainBackground.jpg",
+      },
+    ],
+  },
 };
 
 async function Layout({ children }) {
