@@ -7,7 +7,7 @@ export default function ProjectPageHeader({ project }) {
     <>
       <div className={styles.mainWrapper}>
         <div>
-          <h2 className="titlePageTitle">
+          <h2 className="titlePageSubtitle">
             {project?.fields.title || "Project Title"}
           </h2>
           <p className={styles.subtitle}>{project?.fields.highlight1}</p>

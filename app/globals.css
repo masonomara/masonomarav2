@@ -225,12 +225,12 @@ option:disabled {
   line-height: 97%;
   font-size: calc(0.19 * (100vw - 40px));
 }
-.titleBlogTitle {
+.titlePageSubtitle {
   font-family: "EditorialRegular" !important;
   font-weight: 400 !important;
   letter-spacing: -0.025em !important;
   line-height: 97%;
-  font-size: 64px;
+  font-size: calc(0.15 * (100vw - 40px));
 }
 .titleBlogSmall {
   font-family: "EditorialRegular" !important;
@@ -256,7 +256,17 @@ option:disabled {
     font-size: 35.25px;
   }
   .titlePageTitle {
-    font-size: 97px;
+    font-size: 89.3px;
+  }
+  .titlePageSubtitle {
+    font-size: 70.5px;
+  }
+  .titleBlogTitle {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 97%;
+    font-size: calc(0.19 * (100vw - 40px));
   }
 }
 @media screen and (min-width: 900px) {
@@ -270,18 +280,24 @@ option:disabled {
     font-size: calc(0.066 * (100vw - 80px));
   }
   .titleSmall {
-    font-size: calc(0.096 * (60vw - 80px));
+    font-size: calc(0.055 * (100vw - 80px));
   }
   .titleTiny {
     font-size: calc(0.044 * (100vw - 80px));
   }
   .titlePageTitle {
-    font-size: 97px;
+    font-size: 89.3px;
+  }
+  .titlePageSubtitle {
+    font-size: 70.5px;
   }
 }
 @media screen and (min-width: 1112px) {
   .titleMedium {
     font-size: 66.07px;
+  }
+  .titleSmall {
+    font-size: 55px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -290,9 +306,6 @@ option:disabled {
   }
   .titleLarge {
     font-size: 80.64px;
-  }
-
-  .titleSmall {
   }
   .titleTiny {
     font-size: 52.8px;

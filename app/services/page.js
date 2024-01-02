@@ -1,41 +1,90 @@
-import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 import React from "react";
-import styles from "../../styles/ContactForm.module.css";
+import styles from "../../styles/ServicesPage.module.css";
+import Image from "next/image";
 
 export const metadata = {
-  title: "Contact",
+  title: "Services",
 };
 
 export default function Services() {
   return (
     <div className={styles.container}>
-      <div className={styles.contentWrapper}>
-        <h2 className={styles.title}>Services</h2>
+      <div className={styles.headerWrapper}>
+        <h2 className="titlePageTitle">Services</h2>
         <p className={styles.subtitle}>
           Building flexible and scalable solutions across different platforms
           and mediums. Looking for oppurtunities to apply creative branding.
         </p>
-        {/* <p className={styles.header}>New Business & Inquiries</p>
-        <Link
-          href={"mailto:mason.omara@gamil.com"}
-          target={"_blank"}
-          className={styles.emailLink}
-        >
-          <p>mason.omara@gmail.com</p>
-        </Link>
-        <p className={styles.header}>Office Location</p>
-        <Link
-          href={
-            "https://www.google.com/maps/dir/40.2098801,-74.0242841/Current+Media+Company,+1301+Corlies+Ave+Suite+2D,+Neptune+City,+NJ+07712/@40.2099178,-74.0267435,17z/data=!3m1!4b1!4m18!1m7!3m6!1s0x2aaba72f78ae592f:0x471c3c6409d7ff16!2sCurrent+Media+Company!8m2!3d40.2100309!4d-74.0240908!16s%2Fg%2F11p09n7wjt!4m9!1m1!4e1!1m5!1m1!1s0x2aaba72f78ae592f:0x471c3c6409d7ff16!2m2!1d-74.0240908!2d40.2100309!3e0?entry=ttu"
-          }
-          target={"_blank"}
-          className={styles.emailLink}
-        >
-          <p>1301 Corlies Ave, Neptune NJ Suite 2D</p>
-        </Link>*/}
       </div>
-      {/* <ContactForm /> */}
+
+      <div className={styles.servicesContainerLarge}>
+        <Link
+          target={"_top"}
+          href={"/services/websites"}
+          className={styles.servicesWrapperLarge}
+        >
+          <div>
+            <h3 className={styles.servicesTitle}>Websites</h3>
+            <p className={styles.servicesWrapperSubtitle}>
+              E-Commerce Solutions • Custom Websites & Interfaces • SEO Strategy
+            </p>
+            <p className={styles.servicesWrapperDescription}>
+              Improve your businesses's online presence with a unique and
+              scalable website tailored to your goals, complete with an
+              effective SEO strategy.
+            </p>
+          </div>
+          <div className={styles.arrowContainer}>
+            <div className={styles.arrowWrapper}>
+              <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} />
+            </div>
+          </div>
+        </Link>
+        <Link
+          target={"_top"}
+          href={"/services/brand-and-content"}
+          className={styles.servicesWrapperLarge}
+        >
+          <div>
+            <h3 className={styles.servicesTitle}>Brand & Content</h3>
+            <p className={styles.servicesWrapperSubtitle}>
+              Logo and Brand Design • Graphic Design • Copywriting & Content
+            </p>
+            <p className={styles.servicesWrapperDescription}>
+              Establish a memorable brand identity applicable across all
+              customer touchpoints, resonating with your audience.
+            </p>
+          </div>
+          <div className={styles.arrowContainer}>
+            <div className={styles.arrowWrapper}>
+              <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} />
+            </div>
+          </div>
+        </Link>
+        <Link
+          target={"_top"}
+          href={"/services/product-design"}
+          className={styles.servicesWrapperLarge}
+        >
+          <div>
+            <h3 className={styles.servicesTitle}>Product Design</h3>
+            <p className={styles.servicesWrapperSubtitle}>
+              User Experience Design • Custom Mobile Applications • Creative
+              Solutions
+            </p>
+            <p className={styles.servicesWrapperDescription}>
+              Blending technical experience and UX design principles with a
+              creative flair to create innovative and intuitive solutions.
+            </p>
+          </div>
+          <div className={styles.arrowContainer}>
+            <div className={styles.arrowWrapper}>
+              <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} />
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }

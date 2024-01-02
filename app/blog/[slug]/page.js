@@ -60,7 +60,9 @@ export default async function BlogPage({ params }) {
         <span className={styles.portfolioText}>Back to blog</span>
       </Link>
       <div className={styles.mainHeaderWrapper}>
-        <h2 className="titleBlogTitle">{blog?.fields.title || "blog Title"}</h2>
+        <h2 className="titlePageSubtitle">
+          {blog?.fields.title || "blog Title"}
+        </h2>
         <div className={styles.fancyDivider}>{""}</div>
         <ProjectContent project={blog} />
       </div>

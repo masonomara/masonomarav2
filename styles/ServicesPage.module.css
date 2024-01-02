@@ -1,0 +1,151 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  padding: 0px 20px 0px 20px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  position: relative;
+}
+.headerWrapper {
+  width: 100%;
+  padding: 24px 0px 48px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+.subtitle {
+  text-align: left;
+  font-size: 17px;
+  line-height: 130%;
+  width: 100%;
+  margin-top: 8px;
+  max-width: 625px;
+}
+.servicesTitle {
+  font-family: "EditorialRegular" !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 97%;
+  font-size: calc(0.109 * (100vw - 40px));
+}
+.servicesWrapperSubtitle {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+  max-width: 550px;
+}
+.servicesWrapperDescription {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin-top: 9px;
+  max-width: 550px;
+}
+.servicesContainerLarge {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+.servicesWrapperLarge {
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+  padding: 32px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.arrowContainer {
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.arrowWrapper {
+  position: relative;
+  min-width: calc(((0.109 * (100vw - 40px)) * 0.97) - 14px);
+  height: calc(((0.109 * (100vw - 40px)) * 0.97) - 14px);
+  transition: 200ms ease all;
+  margin-right: 6px;
+}
+.fancyDivider {
+  background-image: url("/starRed.png");
+  background-repeat: repeat no-repeat;
+  background-position: center left;
+  background-size: 14px 9px;
+  height: 9px;
+  width: 100%;
+}
+@media screen and (min-width: 550px) {
+  .servicesTitle {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 97%;
+    font-size: 52px;
+  }
+  .container {
+    width: 100%;
+    padding: 16px 40px 0px 40px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    z-index: 1;
+  }
+  .arrowWrapper {
+    height: 38px;
+    min-width: 38px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .contentWrapper {
+    padding: 32px 16px 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .servicesContainerLarge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .servicesTitle {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 97%;
+    font-size: calc(0.04 * (100vw - 120px));
+  }
+  .arrowWrapper {
+    min-width: calc(((0.04 * (100vw - 120px)) * 0.97) - 14px);
+    height: calc(((0.04 * (100vw - 120px)) * 0.97) - 14px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .servicesTitle {
+    font-size: 46px;
+  }
+  .arrowWrapper {
+    min-width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .arrowWrapper {
+    min-width: 24px;
+    height: 24px;
+  }
+}

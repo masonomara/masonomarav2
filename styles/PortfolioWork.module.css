@@ -209,6 +209,10 @@
     transition: 200ms ease-out all;
     opacity: 0.6;
   }
+  .wrapper,
+  .wrapperOpen {
+    grid-template-columns: 3fr 10fr;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -239,6 +243,10 @@
   .wrapperOpen {
     column-gap: 40px;
     min-width: 0px;
+  }
+  .wrapper,
+  .wrapperOpen {
+    grid-template-columns: 3fr 14fr;
   }
   .imageWrapper {
     grid-row: span 2;

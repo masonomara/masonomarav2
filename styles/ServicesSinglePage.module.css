@@ -1,0 +1,136 @@
+.container {
+  padding: 24px 20px 0px;
+  width: 100%;
+  max-width: 1280px;
+}
+.arrowWrapper {
+  font-weight: 500;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  letter-spacing: -0.01em;
+  align-items: center;
+  width: fit-content;
+  margin-top: -14px;
+  transition: ease-in all 100ms;
+}
+.arrow {
+  transform: rotate(180deg);
+}
+.mainHeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+.subtitle {
+  text-align: left;
+  font-size: 17px;
+  line-height: 130%;
+  width: 100%;
+  margin-top: 8px;
+  max-width: 625px;
+}
+.headerWrapper {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+.header {
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.divider {
+  height: 2px;
+  background: var(--primary);
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 550px) {
+  .servicesTitle {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 97%;
+    font-size: 52px;
+  }
+  .container {
+    width: 100%;
+    padding: 24px 40px 0px 40px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    z-index: 1;
+  }
+  .arrowWrapper {
+    height: 32px;
+    min-width: 32px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 32px 40px 0px;
+    width: 100%;
+    max-width: 1280px;
+  }
+  .contentWrapper {
+    padding: 32px 16px 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .mainHeaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  .servicesContainerLarge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .servicesTitle {
+    font-family: "EditorialRegular" !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.025em !important;
+    line-height: 97%;
+    font-size: calc(0.04 * (100vw - 120px));
+  }
+  .arrowWrapper {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .servicesTitle {
+    font-size: 46px;
+  }
+  .arrowWrapper {
+    height: 32px;
+  }
+}
