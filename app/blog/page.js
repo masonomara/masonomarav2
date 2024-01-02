@@ -18,8 +18,6 @@ async function Blog() {
   const res = await client.getEntries({ content_type: "bio" });
 
   const blogPosts = res.items;
-  // .slice()
-  // .sort((a, b) => b.fields.number - a.fields.number);
   return (
     <div className={styles.container}>
       <div className={styles.headerWrapper}>
@@ -31,7 +29,7 @@ async function Blog() {
       </div>
       <div className={styles.blogPostsWrapper}>
         {blogPosts.map((blogPost, index) => (
-          <BlogPostList blogPost={blogPost} />
+          <BlogPostList key={index} blogPost={blogPost} />
         ))}
       </div>
     </div>
