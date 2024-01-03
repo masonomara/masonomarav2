@@ -21,7 +21,7 @@ export const metadata = {
       "Technical developer and creative designer building intuitive and engaging products with a focus on business objectives and user experience.",
     images: [
       {
-        url: "/grainBackground.jpg",
+        url: "/social.png",
       },
     ],
   },
