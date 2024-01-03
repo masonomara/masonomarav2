@@ -8,7 +8,7 @@ const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Mason O’Mara | Scalable Development & Creative Design",
+    default: "Mason O’Mara",
     template: "Mason O’Mara | %s",
   },
   icons: {
