@@ -331,3 +331,17 @@ option:disabled {
     min-width: 0px;
   }
 }
+
+.notFoundWrapper {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  padding: 96px 48px;
+}
+.notFoundWrapper * {
+  text-align: center;
+}
