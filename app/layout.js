@@ -32,10 +32,10 @@ async function Layout({ children }) {
   return (
     <html lang="en">
       <script
-        strategy="lazyOnload"
+        async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <script strategy="lazyOnload">
+      <script >
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
