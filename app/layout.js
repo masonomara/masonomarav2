@@ -3,7 +3,7 @@ import "./globals.css";
 import LayoutHeader from "../components/LayoutHeader";
 import { Analytics } from "@vercel/analytics/react";
 import LayoutFooter from "@/components/LayoutFooter";
-import Script from "next/script";
+
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -31,11 +31,11 @@ export const metadata = {
 async function Layout({ children }) {
   return (
     <html lang="en">
-      <Script
+      <script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script strategy="lazyOnload">
+      <script strategy="lazyOnload">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -44,7 +44,7 @@ async function Layout({ children }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script>
+      </script>
       <body className={`${publicSans.className}`}>
         <LayoutHeader />
         {children}
