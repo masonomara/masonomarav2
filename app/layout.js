@@ -4,7 +4,6 @@ import LayoutHeader from "../components/LayoutHeader";
 import { Analytics } from "@vercel/analytics/react";
 import LayoutFooter from "@/components/LayoutFooter";
 
-
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export const metadata = {
@@ -35,7 +34,7 @@ async function Layout({ children }) {
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <script >
+      <script>
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
