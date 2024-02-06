@@ -9,7 +9,7 @@ export default function HomepageHero() {
       <div className={styles.contentTop}>
         <div className={styles.titleWrapper}>
           <h2 className="titleDisplay">
-            Scalabale <br />
+            Scalable <br />
             Development
           </h2>
           <h2 className="italic titleDisplay">
@@ -19,8 +19,8 @@ export default function HomepageHero() {
           </h2>
         </div>
         <p className={styles.subtitle}>
-          Building intuitive and engaging products with a focus on business
-          objectives and user experience.
+          Developing intuitive and engaging products, prioritizing your business
+          objectives and enhancing user experiences.
         </p>
         <Link href={"/contact"} target={"_top"} className={styles.button}>
           Get Started

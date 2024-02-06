@@ -30,7 +30,7 @@ export default function HomepageAbout() {
         </h4>
         <p className={styles.subtitle}>
           Freelance <strong>DEVELOPER</strong> and{" "}
-          <strong>DIGITAL PRODUCT DESIGNER</strong> based in Asbury Park, New
+          <strong>PRODUCT DESIGNER</strong> based in Asbury Park, New
           Jersey, operating under Current Media Company.
         </p>
       </div>
