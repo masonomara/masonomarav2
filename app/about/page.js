@@ -14,8 +14,7 @@ export default function About() {
         <div className={styles.richtext__container}>
           <h3 className="titleBlogSmall">About Me</h3>
           <p>
-            Hello! I’m Mason O’Mara, currently serving as the Technical Projects
-            Manager at Current Media Company. My expertise lies in empowering
+            Hello! I’m Mason O’Mara, currently serving as a Product Designer & Developer at Current Media Company. My expertise lies in empowering
             businesses to establish a robust digital presence through website
             development, branding, and product design and I have a passion for
             digital innovation.
