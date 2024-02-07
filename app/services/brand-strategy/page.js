@@ -18,13 +18,13 @@ export default async function ServicePage() {
         <span className={styles.arrowTexts}>Back to services</span>
       </Link>
       <div className={styles.mainHeaderWrapper}>
-        <h1 className="titlePageSubtitle">Brand & Content</h1>
+        <h1 className="titlePageSubtitle">Brand Strategy</h1>
         <p className={styles.subtitle}>
         Establish a distinctive brand that connects with your audience through a thoughtful blend of design, user research, graphics, and messaging for a lasting impact.
         </p>
       </div>
       <SubServices
-        header={"Brand & Content"}
+        header={"Brand Strategy"}
         title1={"Foundational Design Systems"}
         description1={
           "Develop a visually engaging design system with careful consideration of color schemes, typography, accessibility, and interactive elements. This ensures a cohesive and visually appealing system for all interactions, presented in easily digestible formats for your team's seamless use."

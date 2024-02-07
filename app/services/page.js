@@ -22,7 +22,7 @@ export default function Services() {
       <div className={styles.servicesContainerLarge}>
         <Link
           target={"_top"}
-          href={"/services/websites"}
+          href={"/services/product-design"}
           className={styles.servicesWrapperLarge}
         >
           <div>
@@ -44,11 +44,11 @@ export default function Services() {
         </Link>
         <Link
           target={"_top"}
-          href={"/services/brand-and-content"}
+          href={"/services/development-solutions"}
           className={styles.servicesWrapperLarge}
         >
           <div>
-            <h3 className={styles.servicesTitle}>Brand & Content</h3>
+            <h3 className={styles.servicesTitle}>Development Solutions</h3>
             <p className={styles.servicesWrapperSubtitle}>
               Mobile iOS Apps • Custom Websites & Interfaces • Shopify Stores
             </p>
@@ -65,7 +65,7 @@ export default function Services() {
         </Link>
         <Link
           target={"_top"}
-          href={"/services/product-design"}
+          href={"/services/brand-strategy"}
           className={styles.servicesWrapperLarge}
         >
           <div>

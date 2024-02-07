@@ -18,13 +18,13 @@ export default async function ServicePage() {
         <span className={styles.arrowTexts}>Back to services</span>
       </Link>
       <div className={styles.mainHeaderWrapper}>
-        <h1 className="titlePageSubtitle">Websites</h1>
+        <h1 className="titlePageSubtitle">Development Solutions</h1>
         <p className={styles.subtitle}>
         Improve your online presence with tailored and scalable solutions built on cutting-edge technology and user-centric practices for intuitive mobile apps, websites, or E-commerce stores aligned with your unique goals.
         </p>
       </div>
       <SubServices
-        header={"Websites"}
+        header={"Development Solutions"}
         title1={"Mobile iOS Apps"}
         description1={
           "Engage your users with delightful iOS apps crafted using technologies like React Native and Expo. Our full-stack solutions ensure a delightful experience on the Apple App Store, aligning seamlessly with user preferences and incorporating custom features for a unique and memorable interaction."
