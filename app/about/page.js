@@ -14,8 +14,8 @@ export default function About() {
         <div className={styles.richtext__container}>
           <h3 className="titleBlogSmall">About Me</h3>
           <p>
-            Hello! I'm Mason O'Mara, currently serving as the Technical Projects
-            Manager at Current Media Company.My expertise lies in empowering
+            Hello! I’m Mason O’Mara, currently serving as the Technical Projects
+            Manager at Current Media Company. My expertise lies in empowering
             businesses to establish a robust digital presence through website
             development, branding, and product design and I have a passion for
             digital innovation.
@@ -26,7 +26,7 @@ export default function About() {
             If you stumbled upon my website while searching my name, you might
             have discovered my background as a Division 1 Baseball player at
             George Mason University. While pursuing my passion for sports, I
-            also delved into economics, earning a Bachelor's degree. Initially
+            also delved into economics, earning a Bachelor’s degree. Initially
             on a finance career path disrupted by COVID, I embraced freelancing,
             taking on diverse projects in website development and digital
             content. As I explored online business development, coding evolved
@@ -48,7 +48,7 @@ export default function About() {
             A consistent theme in my work revolves around clear and effective
             communication with clients. I prioritize fully understanding their
             needs, ensuring alignment with their future brand or project plans.
-            I don't shy away from infusing creative elements or leveraging new
+            I don’t shy away from infusing creative elements or leveraging new
             technologies. My commitment is rooted in transparency, guiding
             clients in the right direction.
           </p>
