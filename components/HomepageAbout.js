@@ -29,8 +29,8 @@ export default function HomepageAbout() {
           <span className={styles.titleDisplayItalic}>Design</span>
         </h4>
         <p className={styles.subtitle}>
-          Freelance <strong>DEVELOPER</strong> and{" "}
-          <strong>PRODUCT DESIGNER</strong> based in Asbury Park, New
+          Freelance <strong>PRODUCT DESIGNER</strong> and{" "}
+          <strong>DEVELOPER</strong> based in Asbury Park, New
           Jersey, operating under Current Media Company.
         </p>
       </div>
