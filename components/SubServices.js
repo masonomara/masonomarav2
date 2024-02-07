@@ -21,22 +21,22 @@ export default function HomepageServices({
       <div className={styles.contentWrapper}>
         <div className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className="titleMedium italic">{title1}</h4>
-            <p className={styles.serviceDescrption}>{description1}</p>
+            <h4 className="titleMedium ">{title1}</h4>
+            <p className={styles.serviceDescription}>{description1}</p>
           </div>
         </div>
         <div className={styles.fancyDivider}>{""}</div>
         <div className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
             <h4 className="titleMedium">{title2}</h4>
-            <p className={styles.serviceDescrption}>{description2}</p>
+            <p className={styles.serviceDescription}>{description2}</p>
           </div>
         </div>
         <div className={styles.fancyDivider}>{""}</div>
         <div className={styles.serviceWrapper}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className="titleMedium italic">{title3}</h4>
-            <p className={styles.serviceDescrption}>{description3}</p>
+            <h4 className="titleMedium ">{title3}</h4>
+            <p className={styles.serviceDescription}>{description3}</p>
           </div>
         </div>
       </div>

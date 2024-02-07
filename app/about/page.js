@@ -14,53 +14,55 @@ export default function About() {
         <div className={styles.richtext__container}>
           <h3 className="titleBlogSmall">About Me</h3>
           <p>
-            Hi! I’m Mason O’Mara. I’m currently operating as Technical Projects
-            Manager at Current Media Company. I help business establish their
-            digital presence helping with websites development, branding, and
-            product design. I also have a knack setting up successful events
-            every once in a while.
+            Hello! I'm Mason O'Mara, currently serving as the Technical Projects
+            Manager at Current Media Company.My expertise lies in empowering
+            businesses to establish a robust digital presence through website
+            development, branding, and product design and I have a passion for
+            digital innovation.
           </p>
 
-          <h3 className="titleBlogSmall italic">How I Got Here</h3>
+          <h3 className="titleBlogSmall">How I Got Here</h3>
           <p>
-            If you found my website by searching my name, you might have noticed
-            I used to play Division 1 Baseball at George Mason University. While
-            pursuing my first love, I also enjoyed studying economics and earned
-            a Bachelors degree in the subject. My initial job search in finance
-            was disrupted during COVID, so I began freelancing, taking on
-            projects involving website development and various digital content
-            tasks, alongside a few other odd jobs.
+            If you stumbled upon my website while searching my name, you might
+            have discovered my background as a Division 1 Baseball player at
+            George Mason University. While pursuing my passion for sports, I
+            also delved into economics, earning a Bachelor's degree. Initially
+            on a finance career path disrupted by COVID, I embraced freelancing,
+            taking on diverse projects in website development and digital
+            content. As I explored online business development, coding evolved
+            from a hobby to a serious pursuit.
           </p>
+
+          <h3 className="titleBlogSmall">Passion for My Work</h3>
           <p>
-            The more opportunities I had developing online businesses presences,
-            seeing tangible results, and delving deeper into coding—a hobby
-            turned serious—the more I fell in love with building up digital
-            products. I began studying user-focused design and pouring over
-            documentation for new technologies, and a new passion was born.
+            My journey involved developing online business presences, witnessing
+            tangible results, and diving into coding. This journey fueled a
+            passion for building digital products. Studying user-focused design
+            and exploring new technologies became my focus, shaping a new
+            professional chapter.
           </p>
           <h3 className="titleBlogSmall">
             Scalability, Creativity, and Transparency
           </h3>
           <p>
-            A consistent theme in my work is clear and effective communication
-            with clients. I strive to fully understanding their needs before
-            working with them on a project making certain it aligns with their
-            future brand or project plans. This is complimented by never shying
-            away from a chance to infuse creative elements, utilize a new
-            technology, and a commitment to being transparent and guiding
+            A consistent theme in my work revolves around clear and effective
+            communication with clients. I prioritize fully understanding their
+            needs, ensuring alignment with their future brand or project plans.
+            I don't shy away from infusing creative elements or leveraging new
+            technologies. My commitment is rooted in transparency, guiding
             clients in the right direction.
           </p>
-          <h3 className="titleBlogSmall italic">Get in Touch</h3>
+          <h3 className="titleBlogSmall">Get in Touch</h3>
           <p>
             For new business inquiries, please fill in{" "}
             <a target={"_blank"} href={"/contact"}>
               this form
             </a>
-            . Feel free to reach me at my email here:{" "}
+            . Feel free to reach me at my email{" "}
             <a target={"_blank"} href={"mailto:mason.omara@gmail.com"}>
               mason.omara@gmail.com.
             </a>{" "}
-            I’m currently based in and enjoying Asbury Park, New Jersey.
+            Currently based in and enjoying Asbury Park, New Jersey.
           </p>
         </div>
       </div>

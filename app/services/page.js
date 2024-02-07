@@ -13,8 +13,9 @@ export default function Services() {
       <div className={styles.headerWrapper}>
         <h2 className="titlePageTitle">Services</h2>
         <p className={styles.subtitle}>
-          Building flexible and scalable solutions across different platforms
-          and mediums. Looking for oppurtunities to apply creative branding.
+          Developing adaptable and scalable solutions across platforms, eager to
+          collaborate with creative teams and create delightful user
+          experiences.
         </p>
       </div>
 
@@ -25,14 +26,14 @@ export default function Services() {
           className={styles.servicesWrapperLarge}
         >
           <div>
-            <h3 className={styles.servicesTitle}>Websites</h3>
+            <h3 className={styles.servicesTitle}>Product Design</h3>
             <p className={styles.servicesWrapperSubtitle}>
-              E-Commerce Solutions • Custom Websites & Interfaces • SEO Strategy
+              Foundational User Research • Design Tools and Assets • Development
+              and Launch
             </p>
             <p className={styles.servicesWrapperDescription}>
-              Improve your businesses’s online presence with a unique and
-              scalable website tailored to your goals, complete with an
-              effective SEO strategy.
+              Develop a well-designed product with a human-centered approach
+              that aligns with business objectives for a successful product.
             </p>
           </div>
           <div className={styles.arrowContainer}>
@@ -49,11 +50,11 @@ export default function Services() {
           <div>
             <h3 className={styles.servicesTitle}>Brand & Content</h3>
             <p className={styles.servicesWrapperSubtitle}>
-              Logo and Brand Design • Graphic Design • Copywriting & Content
+              Mobile iOS Apps • Custom Websites & Interfaces • Shopify Stores
             </p>
             <p className={styles.servicesWrapperDescription}>
-              Establish a memorable brand identity applicable across all
-              customer touchpoints, resonating with your audience.
+              mprove your online presence with tailored and scalable solutions
+              stores aligned with your unique goals.
             </p>
           </div>
           <div className={styles.arrowContainer}>
@@ -68,14 +69,14 @@ export default function Services() {
           className={styles.servicesWrapperLarge}
         >
           <div>
-            <h3 className={styles.servicesTitle}>Product Design</h3>
+            <h3 className={styles.servicesTitle}>Brand Strategy</h3>
             <p className={styles.servicesWrapperSubtitle}>
-              User Experience Design • Custom Mobile Applications • Creative
-              Solutions
+              Foundational Design Systems • Graphic Design and Assets •
+              Messaging and Content
             </p>
             <p className={styles.servicesWrapperDescription}>
-              Blending technical experience and UX design principles with a
-              creative flair to create innovative and intuitive solutions.
+              Establish a distinctive brand that connects with your audience for
+              a lasting impact.
             </p>
           </div>
           <div className={styles.arrowContainer}>

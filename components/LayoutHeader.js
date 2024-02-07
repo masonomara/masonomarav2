@@ -85,7 +85,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Portfolio</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Selected projects I’ve worked on.
+                  Explore Selected Work
                 </span>
               </Link>
               <Link
@@ -95,7 +95,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Services</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Flexible and scalable solutions.
+                  Flexible and Scalable Solutions
                 </span>
               </Link>
               <Link
@@ -105,7 +105,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">About</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Establishing digital presences.
+                  Building Digital Presences
                 </span>
               </Link>
               <Link
@@ -115,7 +115,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Blog</span>
                 <span className={styles.fullMenuItemDescription}>
-                  Insights and advice I wrote.
+                  Insights and Advice
                 </span>
               </Link>
               <Link
@@ -125,7 +125,7 @@ export default function LayoutHeader() {
               >
                 <span className="titleSmall">Contact</span>
                 <span className={styles.fullMenuItemDescription}>
-                  New business and inquiries.
+                  New Business and Inquiries
                 </span>
               </Link>
             </div>

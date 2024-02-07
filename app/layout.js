@@ -30,12 +30,13 @@ export const metadata = {
 async function Layout({ children }) {
   return (
     <html lang="en">
-      <script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <script>
-        {`
+      <body className={`${publicSans.className}`}>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script>
+          {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
@@ -43,8 +44,7 @@ async function Layout({ children }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </script>
-      <body className={`${publicSans.className}`}>
+        </script>
         <LayoutHeader />
         {children}
         <Analytics />

@@ -26,7 +26,7 @@ export default function LayoutFooter() {
           >
             <p className="titleTiny">Portfolio</p>
             <p className={styles.linkSubtitle}>
-              Selected projects I’ve worked on.
+            Explore Selected Work
             </p>
           </Link>
           <Link
@@ -36,18 +36,16 @@ export default function LayoutFooter() {
           >
             <p className="titleTiny">Services</p>
             <p className={styles.linkSubtitle}>
-              Flexible and scalable solutions.
+              Flexible and Scalable Solutions
             </p>
           </Link>
           <Link href={"/about"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">About</p>
-            <p className={styles.linkSubtitle}>
-              Establishing digital presences.{" "}
-            </p>
+            <p className={styles.linkSubtitle}>Building Digital Presences </p>
           </Link>
           <Link href={"/blog"} target={"_top"} className={styles.linkWrapper}>
             <p className="titleTiny">Blog</p>
-            <p className={styles.linkSubtitle}>Insights and advice I wrote.</p>
+            <p className={styles.linkSubtitle}>Insights and Advice</p>
           </Link>
           <Link
             href={"/contact"}
@@ -55,7 +53,7 @@ export default function LayoutFooter() {
             className={styles.linkWrapper}
           >
             <p className="titleTiny">Contact</p>
-            <p className={styles.linkSubtitle}>New business and inquiries.</p>
+            <p className={styles.linkSubtitle}>New Business and Inquiries</p>
           </Link>
         </div>
         <div className={styles.footerBottom}>
