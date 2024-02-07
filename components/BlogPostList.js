@@ -17,7 +17,7 @@ export default function BlogPostList({ blogPost }) {
       >
         <div className={styles.blogPostContent}>
           <span className="titleMedium">{blogPost.fields.title}</span>
-          <p className={styles.subtitle}>{blogPost.fields.highlight1}</p>
+          <p className={styles.subtitle}>{blogPost.fields.overview}</p>
         </div>
         <div className={styles.arrowWrapper}>
           <Image

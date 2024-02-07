@@ -75,7 +75,7 @@ export default function PortfolioWork({ project }) {
             <div className={styles.descriptionWrapper}>
               <p className={styles.descriptionheader}>Overview</p>
               <span className={styles.description}>
-                {project?.fields.highlight1}&nbsp;
+                {project?.fields.overview}&nbsp;
                 <Link
                   onClick={(e) => handleChildElementClick(e)}
                   className={`${styles.description} ${styles.descriptionLink}`}
@@ -119,7 +119,7 @@ export default function PortfolioWork({ project }) {
           <div className={styles.descriptionWrapper}>
             <p className={styles.descriptionheader}>Overview</p>
             <span className={styles.description}>
-              {project?.fields.highlight1}&nbsp;
+              {project?.fields.overview}&nbsp;
               <Link
                 onClick={(e) => handleChildElementClick(e)}
                 className={`${styles.description} ${styles.descriptionLink}`}

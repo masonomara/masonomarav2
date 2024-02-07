@@ -35,7 +35,7 @@ export const ProjectContent = ({ project }) => {
     <div className={styles.richtext__container}>
       {project.fields.coverImage ? (
         <>
-          <h4 className="titleBlogSmall">{project.fields.highlight1}</h4>
+          <h4 className="titleBlogSmall">{project.fields.overview}</h4>
 
           <div className={styles.imageWrapper__desktop}>
             <Image
@@ -48,7 +48,7 @@ export const ProjectContent = ({ project }) => {
         </>
       ) : (
         <>
-          <h4 className="titleBlogSmall">{project.fields.highlight1}</h4>
+          <h4 className="titleBlogSmall">{project.fields.overview}</h4>
         </>
       )}
 
