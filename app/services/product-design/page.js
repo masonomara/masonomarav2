@@ -29,11 +29,11 @@ export default async function ServicePage() {
         description1={
           "Embrace qualitative primary user research to understand the target audience's needs, goals, expectations, and tasks. Stakeholder input contributes to value propositions, device usage, competitor audits, and brainstorming. Informed design decisions consider user needs at different stages of the process, ensuring a successful product outcome."
         }
-        title2={"Custom Mobile Applications"}
+        title2={"Design Tools and Assets"}
         description2={
           "Define and design products with foundational user research and technical expertise. A dedication to the design process results in well-crafted information architectures, wireframes, mockups, and prototypes. Considering user actions, feedback mechanisms, incentives, and business objectives, the goal is to create realistic and engaging digital products across web and mobile applications."
         }
-        title3={"Creative Solutions"}
+        title3={"Development and Launch"}
         description3={
           "Whether working independently or collaboratively, my priority is development with a user-centric and scalable mindset, always seeking opportunities to add a creative flair. This approach ensures well-executed post-launch research and facilitates the development of new features. Digital products consistently align with both business goals and user expectations."
         }
