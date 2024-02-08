@@ -11,7 +11,7 @@ export default function HomepageServices() {
       </div>
       <div className={styles.divider}>{""}</div>
       <div className={styles.contentWrapper}>
-        <Link className={styles.serviceWrapper} href={"/services"}>
+        <Link className={styles.serviceWrapper} href={"/services/product-design"}>
           <div className={styles.serviceContentWrapper}>
             <h4 className="titleMedium italic">Product Design</h4>
             <p className={styles.serviceSubtitle}>
@@ -28,7 +28,7 @@ export default function HomepageServices() {
           </div>
         </Link>
         <div className={styles.fancyDivider}>{""}</div>
-        <Link className={styles.serviceWrapper} href={"/services"}>
+        <Link className={styles.serviceWrapper} href={"/services/development-solutions"}>
           <div className={styles.serviceContentWrapper}>
             <h4 className="titleMedium">Development Solutions</h4>
             <p className={styles.serviceSubtitle}>
@@ -44,7 +44,7 @@ export default function HomepageServices() {
           </div>
         </Link>
         <div className={styles.fancyDivider}>{""}</div>
-        <Link className={styles.serviceWrapper} href={"/services"}>
+        <Link className={styles.serviceWrapper} href={"/services/brand-strategy"}>
           <div className={styles.serviceContentWrapper}>
             <h4 className="titleMedium italic">Brand Strategy</h4>
             <p className={styles.serviceSubtitle}>
