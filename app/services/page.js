@@ -53,7 +53,7 @@ export default function Services() {
               Mobile iOS Apps • Custom Websites & Interfaces • Shopify Stores
             </p>
             <p className={styles.servicesWrapperDescription}>
-              mprove your online presence with tailored and scalable solutions
+              Improve your online presence with tailored and scalable solutions
               stores aligned with your unique goals.
             </p>
           </div>

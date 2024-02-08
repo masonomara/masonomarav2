@@ -13,49 +13,47 @@ export default function HomepageServices() {
       <div className={styles.contentWrapper}>
         <Link className={styles.serviceWrapper} href={"/services"}>
           <div className={styles.serviceContentWrapper}>
-            <h4 className="titleMedium italic">Websites</h4>
-            <p className={styles.serviceSubtitle}>
-              E-Commerce Strategy & Development • Custom Websites & Interfaces •
-              Technical & Content SEO
-            </p>
-            <p className={styles.serviceDescription}>
-              Improve your businesses’s online presence with a unique and
-              scalable website tailored to your goals, complete with an
-              effective SEO strategy.
-            </p>
-          </div>
-          <div className={styles.displayTitleImageWrapper}>
-            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
-          </div>
-        </Link>
-        <div className={styles.fancyDivider}>{""}</div>
-        <Link className={styles.serviceWrapper} href={"/services"}>
-          <div className={styles.serviceContentWrapper}>
-            <h4 className="titleMedium">Brand & Content</h4>
-            <p className={styles.serviceSubtitle}>
-              Logo and Brand Design • Graphic Design • Copywriting & Content
-              Strategy
-            </p>
-            <p className={styles.serviceDescription}>
-              Establish a memorable brand identity applicable across all
-              customer touchpoints, resonating with your audience.
-            </p>
-          </div>
-          <div className={styles.displayTitleImageWrapper}>
-            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
-          </div>
-        </Link>
-        <div className={styles.fancyDivider}>{""}</div>
-        <Link className={styles.serviceWrapper} href={"/services"}>
-          <div className={styles.serviceContentWrapper}>
             <h4 className="titleMedium italic">Product Design</h4>
             <p className={styles.serviceSubtitle}>
-              User Experience Design • Custom Mobile and Web Applications •
-              Creative Solutions
+              Foundational User Research • Design Tools and Assets • Development
+              and Launch
             </p>
             <p className={styles.serviceDescription}>
-              Blending technical experience and UX design principles with a
-              creative flair to create innovative and intuitive solutions.
+              Develop a well-designed product with a human-centered approach
+              that aligns with business objectives for a successful product.
+            </p>
+          </div>
+          <div className={styles.displayTitleImageWrapper}>
+            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
+          </div>
+        </Link>
+        <div className={styles.fancyDivider}>{""}</div>
+        <Link className={styles.serviceWrapper} href={"/services"}>
+          <div className={styles.serviceContentWrapper}>
+            <h4 className="titleMedium">Development Solutions</h4>
+            <p className={styles.serviceSubtitle}>
+              Mobile iOS Apps • Custom Websites & Interfaces • Shopify Stores
+            </p>
+            <p className={styles.serviceDescription}>
+              Improve your online presence with tailored and scalable solutions
+              stores aligned with your unique goals.
+            </p>
+          </div>
+          <div className={styles.displayTitleImageWrapper}>
+            <Image src={"/arrowRedPoint.png"} fill alt={"arrow"} sizes="10vw" />
+          </div>
+        </Link>
+        <div className={styles.fancyDivider}>{""}</div>
+        <Link className={styles.serviceWrapper} href={"/services"}>
+          <div className={styles.serviceContentWrapper}>
+            <h4 className="titleMedium italic">Brand Strategy</h4>
+            <p className={styles.serviceSubtitle}>
+              Foundational Design Systems • Graphic Design and Assets •
+              Messaging and Content
+            </p>
+            <p className={styles.serviceDescription}>
+              Establish a distinctive brand that connects with your audience for
+              a lasting impact.
             </p>
           </div>
           <div className={styles.displayTitleImageWrapper}>
