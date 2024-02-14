@@ -16,15 +16,20 @@ async function Portfolio() {
 
   const projects = res.items
     .slice()
-    .sort((a, b) => b.fields.number - a.fields.number);
+    .sort((a, b) => b.fields.number - a.fields.number)
+    .filter(
+      (project) =>
+        project.fields.title !== "CaptureNoire" &&
+        project.fields.title !== "Train"
+    );
 
   return (
     <div className={styles.container}>
       <div className={styles.contentWrapper}>
         <h1 className="titlePageTitle">Portfolio</h1>
         <p className={styles.subtitle}>
-          A collection of selected projects I’ve worked on, including custom mobile and
-          web applications to successful e-commerce solutions.
+          A collection of selected projects I’ve worked on, including custom
+          mobile and web applications to successful e-commerce solutions.
         </p>
       </div>
       <div className={styles.featuredWorksWrapper}>

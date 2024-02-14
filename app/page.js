@@ -14,7 +14,12 @@ async function Home() {
 
   const projects = res.items
     .slice()
-    .sort((a, b) => b.fields.number - a.fields.number);
+    .sort((a, b) => b.fields.number - a.fields.number)
+    .filter(
+      (project) =>
+        project.fields.title !== "CaptureNoire" &&
+        project.fields.title !== "Train"
+    );
 
   return (
     <main>
