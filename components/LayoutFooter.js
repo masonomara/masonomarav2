@@ -25,9 +25,7 @@ export default function LayoutFooter() {
             className={styles.linkWrapper}
           >
             <p className="titleTiny">Portfolio</p>
-            <p className={styles.linkSubtitle}>
-            Explore Selected Work
-            </p>
+            <p className={styles.linkSubtitle}>Explore Selected Work</p>
           </Link>
           <Link
             href={"/services"}
@@ -76,8 +74,8 @@ export default function LayoutFooter() {
               Currently based in Asbury Park, NJ.
             </span>
             <span className={styles.subtitle}>
-              Focuses include websites, branding, apps, e-commerce, and product
-              design.
+              Focuses include product design, development solutions and brand
+              strategy.
             </span>
           </div>
         </div>

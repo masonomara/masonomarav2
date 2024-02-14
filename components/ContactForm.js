@@ -72,52 +72,7 @@ const ContactForm = () => {
           {...register("startDate", { required: false })}
         />
       </div>
-      <div className={styles.labelWrapper}>
-        <label htmlFor="email" className={styles.formHeader}>
-          Allocated Investment
-        </label>
-        <div className={styles.formInputSelectWrapper}>
-          <select
-            id="investmentOptions"
-            className={styles.formInputSelect}
-            defaultValue={"None selected"}
-            {...register("investment", { required: false })}
-          >
-            <option
-              className={styles.formInputOption}
-              value="None selected"
-              disabled
-            >
-              Select your option
-            </option>
-            <option
-              className={styles.formInputOption}
-              style={{ opacity: 0.5 }}
-              value="$2.5–5K (Small Project)"
-            >
-              $2.5–5K (Small Project)
-            </option>
-            <option
-              className={styles.formInputOption}
-              value="$5–10K (Basic Branding, Website)"
-            >
-              $5–10K (Basic Branding, Website)
-            </option>
-            <option
-              className={styles.formInputOption}
-              value="$10–20K (Mid-Level Branding, Website, Content)"
-            >
-              $10–20K (Mid-Level Branding, Website, Content)
-            </option>
-            <option
-              className={styles.formInputOption}
-              value="$20–100K (Advanced Branding, Website, Content)"
-            >
-              $20–100K (Advanced Branding, Website, Content)
-            </option>
-          </select>
-        </div>
-      </div>
+
       <div className={styles.labelWrapper}>
         <label htmlFor="details" className={styles.formHeader}>
           Details*

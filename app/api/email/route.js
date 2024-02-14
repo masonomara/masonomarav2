@@ -2,8 +2,7 @@ const { NextResponse } = require("next/server");
 const nodemailer = require("nodemailer");
 
 async function POST(request) {
-  const { name, email, company, startDate, investment, details } =
-    await request.json();
+  const { name, email, company, startDate, details } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -19,7 +18,7 @@ async function POST(request) {
     // cc: email, (uncomment this line if you want to send a copy to the sender)
 
     subject: `Business Inquiry from ${name} - ${company}`,
-    text: `Email:\n${email}\n\nTarget Start Date:\n${startDate}\n\nAllocated Investment:\n${investment}\n\nDetails:\n${details}`,
+    text: `Email:\n${email}\n\nTarget Start Date:\n${startDate}\n\nDetails:\n${details}`,
   };
 
   const sendMailPromise = () =>

@@ -63,12 +63,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.servicesWrapperLarge:hover .arrowContainer {
+  transition: 200ms ease-out all;
+  transform: translateX(4px);
+}
 .arrowContainer {
   width: 100%;
   bottom: 0px;
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+  transition: 200ms ease-in all;
 }
 .arrowWrapper {
   position: relative;
@@ -132,6 +137,17 @@
   .arrowWrapper {
     min-width: calc(((0.04 * (100vw - 120px)) * 0.97) - 14px);
     height: calc(((0.04 * (100vw - 120px)) * 0.97) - 14px);
+  }
+  .servicesWrapperLarge {
+    transition: 200ms ease-out all;
+  }
+  .servicesWrapperLarge:hover {
+    background-color: rgba(175, 25, 16, 0.05);
+    transition: 200ms ease-in all;
+  }
+  .servicesWrapperLarge:active {
+    background-color: rgba(175, 25, 16, 0.1);
+    transition: 100ms ease-in all;
   }
 }
 @media screen and (min-width: 1280px) {
