@@ -20,7 +20,7 @@ export default function Contact() {
         <p className={styles.header}>New Business and Inquiries</p>
         <Link
           href={"mailto:mason.omara@gamil.com"}
-          target={"_blank"}ƒ
+          target={"_blank"}
           className={styles.emailLink}
         >
           <p>mason.omara@gmail.com</p>
