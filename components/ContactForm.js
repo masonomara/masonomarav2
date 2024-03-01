@@ -75,13 +75,13 @@ const ContactForm = () => {
 
       <div className={styles.labelWrapper}>
         <label htmlFor="details" className={styles.formHeader}>
-          Details*
+          Details
         </label>
         <textarea
           rows={5}
           placeholder="Any additional details you would like to share."
           className={styles.formInputDetails}
-          {...register("details", { required: true })}
+          {...register("details", { required: false })}
         ></textarea>
       </div>
       <div>
